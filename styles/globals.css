@@ -2,34 +2,150 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
-    Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  /* font-family: var(--inter-font),ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" */
+  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, */
+  /* Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
+  /* background-color: #eae6e5; */
+  /* color: #8fcb9b; */
+  background-color: #222831;
+  color: #bebebe;
+  /* #8F8073
+  #EAE6E5
+  #8FCB9B
+  #5B9279
+  #12130F */
+  /* https://coolors.co/12130f-5b9279-8fcb9b-eae6e5-8f8073 */
+
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+
+  min-width: 400px;
 }
 
 * {
   box-sizing: border-box;
 }
 
-main {
-  padding: 5rem 0;
-  flex: 1;
+@media (min-width: 1024px) {
+  .content {
+    /* flex: 1; */
+    display: flex;
+    /* overflow: auto; */
+  }
+
+  .col {
+    flex: 1 0 0;
+  }
+  .column2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .stickyItem {
+    position: sticky;
+    align-self: flex-start;
+    height: auto;
+    top: 0;
+  }
+
+  .hideMe {
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
+  .hideMeSmall {
+    display: none;
+  }
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+/* .myNav {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  align-items: center;
+} */
+.myNavA {
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 16px;
+  color: #eeeeee;
+  padding: 0;
+  display: flex;
   align-items: center;
 }
 
-code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-family: Menlo, Monaco, Lucida Console, Courier New, monospace;
+.mySpacer {
+  display: block;
+  width: 2rem;
+  border-top: 1px solid #eeeeee;
+  margin-right: 1rem;
+}
+
+.myNavA:hover .mySpacer {
+  display: block;
+  width: 4rem;
+  border-top: 1px solid #eeeeee;
+  margin-right: 1rem;
 }
 
 .container {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+  padding: 80px 80px 48px 48px;
+}
+
+.myName {
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0;
+  color: #eeeeee;
+}
+.myTitle {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+  margin-top: 12px;
+  color: #eeeeee;
+}
+
+.mySubTitle {
+  max-width: 20rem;
+}
+
+.sectionTitle {
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 16px;
+  color: #eeeeee;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.625;
+  letter-spacing: 0.025em;
+}
+
+.textXS {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
