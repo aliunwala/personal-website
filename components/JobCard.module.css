@@ -34,19 +34,20 @@
 .jobCardTechItem {
   /* align-items: center; */
   /* background: rgba(0, 0, 0, 0.5); */
-  background: rgb(0, 173, 181, 0.5);
+  /* background: rgb(0, 173, 181, 0.5); */
+  background: var(--techBubble);
   border-radius: 16px;
   /* padding: 5px 5px 10px 10px; */
   padding: 0.25rem 0.75rem;
   font-weight: 500;
   line-height: 1.25rem;
   font-size: 0.75rem;
-  color: #57fff4;
+  color: var(--techText);
 }
 
 .jobCardTitle {
   font-weight: 500;
-  color: #eeeeee;
+  color: var(--brightWhite);
 }
 .jobCardBody {
   font-size: 14px;
