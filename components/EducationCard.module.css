@@ -1,12 +1,8 @@
-.jobCard:hover {
+.educationCard:hover {
   background: rgba(0, 0, 0, 0.3);
 }
 
-.jobCardLink:hover {
-  color: rgb(0, 94, 255);
-}
-
-.jobCard {
+.educationCard {
   display: flex;
   /* background-color: aquamarine; */
   /* } */
@@ -14,63 +10,77 @@
   /* background-color: rgb(255, 255, 255); */
   /* color: rgba(0, 0, 0, 0.87); */
   /* transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; */
-  border-radius: 4px;
+  /* border-radius: 4px; */
   /* box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px, */
   /* rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px; */
-  overflow: hidden;
+  /* overflow: hidden; */
   /* max-width: 345px; */
+  /* padding: 10px; */
+  /* gap: 10px; */
+  flex-direction: column;
+  /* margin: 0; */
+  margin-bottom: 20px;
+  border-radius: 4px;
+  font-size: 14px;
+  justify-content: center;
   padding: 10px;
-  gap: 10px;
   color: var(--dullWhite);
 }
+.educationCard p {
+  margin: 0;
+  color: var(--dullWhite);
+  font-size: 14px;
 
-.jobCardLeft {
-  flex: 1 0 0;
-  letter-spacing: 0.025em;
-  text-transform: uppercase;
+  /* padding-left: 20px; */
 }
-.jobCardRight {
-  flex: 3 0 0;
+
+.educationCard a:hover {
+  color: var(--brightWhite);
 }
-.jobCardTechStack {
-  display: flex;
-  gap: 10px;
+
+.educationCard svg {
+  height: 16px;
+  width: 16px;
 }
-.jobCardRow {
+
+.educationCardRow {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-.jobCardLink {
-  text-decoration: none;
-  /* display: flex; */
-  /* align-items: center; */
-  color: rgb(0, 94, 255);
+.educationCardTitle {
+  font-weight: 500;
+  color: var(--brightWhite);
+  font-size: 16px;
 }
 
-.jobCardTechItem {
-  /* align-items: center; */
-  /* background: rgba(0, 0, 0, 0.5); */
-  /* background: rgb(0, 173, 181, 0.5); */
+/* .educationCardLeft {
+  flex: 1 0 0;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+}
+.educationCardRight {
+  flex: 3 0 0;
+}
+.educationCardTechStack {
+  display: flex;
+  gap: 10px;
+} */
+/* .educationCardTechItem {
   background: var(--techBubble);
   border-radius: 16px;
-  /* padding: 5px 5px 10px 10px; */
   padding: 0.25rem 0.75rem;
   font-weight: 500;
   line-height: 1.25rem;
   font-size: 0.75rem;
   color: var(--techText);
-}
+} */
 
-.jobCardTitle {
-  font-weight: 500;
-  color: var(--brightWhite);
-}
-.jobCardBody {
+/*
+.educationCardBody {
   font-size: 14px;
   line-height: 1.5;
-}
+} */
 
 /* .footer {
   width: 100%;

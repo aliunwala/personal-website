@@ -1,12 +1,18 @@
-.jobCard:hover {
+.projectCard:hover {
   background: rgba(0, 0, 0, 0.3);
 }
 
-.jobCardLink:hover {
+.projectCard {
+  padding: 10px;
+  gap: 10px;
+  color: var(--dullWhite);
+}
+
+.projectCardLink:hover {
   color: rgb(0, 94, 255);
 }
 
-.jobCard {
+.projectCardContiner {
   display: flex;
   /* background-color: aquamarine; */
   /* } */
@@ -19,37 +25,37 @@
   /* rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px; */
   overflow: hidden;
   /* max-width: 345px; */
-  padding: 10px;
   gap: 10px;
-  color: var(--dullWhite);
 }
 
-.jobCardLeft {
+.projectCardLeft {
   flex: 1 0 0;
   letter-spacing: 0.025em;
   text-transform: uppercase;
+  /* flex-grow: 1; */
 }
-.jobCardRight {
-  flex: 3 0 0;
+.projectCardRight {
+  flex: 1 0 0;
+  /* flex-grow: 1; */
 }
-.jobCardTechStack {
+.projectCardTechStack {
   display: flex;
   gap: 10px;
 }
-.jobCardRow {
+.projectCardRow {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.jobCardLink {
+.projectCardLink {
   text-decoration: none;
   /* display: flex; */
   /* align-items: center; */
   color: rgb(0, 94, 255);
 }
 
-.jobCardTechItem {
+.projectCardTechItem {
   /* align-items: center; */
   /* background: rgba(0, 0, 0, 0.5); */
   /* background: rgb(0, 173, 181, 0.5); */
@@ -63,11 +69,12 @@
   color: var(--techText);
 }
 
-.jobCardTitle {
+.projectCardTitle {
   font-weight: 500;
   color: var(--brightWhite);
+  margin-bottom: 10px;
 }
-.jobCardBody {
+.projectCardBody {
   font-size: 14px;
   line-height: 1.5;
 }

@@ -27,8 +27,8 @@ body {
   background: linear-gradient(
     90deg,
     rgba(2, 0, 36, 1) 0%,
-    rgb(5, 2, 17) 50%,
-    rgba(2, 0, 36, 1) 100%
+    rgb(16, 6, 53) 50%,
+    rgba(2, 0, 36, 1) 100% /* rgb(5, 2, 17) 50%, */
   );
 
   color: var(--brightWhite);
@@ -57,22 +57,25 @@ body {
     /* flex: 1; */
     display: flex;
     /* overflow: auto; */
+    gap: 20px;
   }
 
   .col {
     flex: 1 0 0;
+    flex-grow: 1;
   }
   .column2 {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    flex-grow: 1.8;
   }
 
   .stickyItem {
     position: sticky;
     align-self: flex-start;
     height: auto;
-    top: 0;
+    top: 80px;
   }
 
   .hideMe {
@@ -148,6 +151,8 @@ ul {
 
 .mySubTitle {
   max-width: 20rem;
+  font-size: 14px;
+  color: var(--dullWhite);
 }
 
 .sectionTitle {
@@ -167,9 +172,16 @@ p {
   font-size: 16px;
   line-height: 1.625;
   letter-spacing: 0.025em;
+  color: var(--dullWhite);
 }
 
 .textXS {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--brightWhite);
+  font-weight: 400;
 }
