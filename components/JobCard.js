@@ -3,13 +3,16 @@ import styles from "./JobCard.module.css";
 export default function JobCard(props) {
   return (
     <>
-      {/* <a href="https://www.w3schools.com"> */}
-      <div className={styles.jobCard}>
+      <div
+        id={props.id === undefined ? "" : props.id}
+        className={styles.jobCard}
+      >
         <div className={[styles.jobCardLeft, "textXS"].join(" ")}>
+          {/* Left side of card with dates */}
           {props.dates}
         </div>
         <div className={styles.jobCardRight}>
-          {/* <span className={styles.jobCardTitle}>{props.title}</span> */}
+          {/* Setting up title of card with a link if it exists */}
           {props.titleLink !== undefined ? (
             <div className={styles.jobCardRow}>
               <a
@@ -19,7 +22,6 @@ export default function JobCard(props) {
                 className={[styles.jobCardLink, styles.jobCardTitle].join(" ")}
               >
                 <span>{props.title}</span>
-                {/* <span style={{ display: "flex", alignItems: "center" }}> */}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
@@ -35,21 +37,28 @@ export default function JobCard(props) {
                     clipRule="evenodd"
                   />
                 </svg>
-                {/* </span> */}
               </a>
             </div>
           ) : (
             <span className={styles.jobCardTitle}>{props.title}</span>
           )}
 
+          {/* Main body of card */}
           <p
             className={styles.jobCardBody}
             dangerouslySetInnerHTML={{ __html: props.description }}
           ></p>
-          <div className={styles.jobCardTechStack}>
-            <div className={styles.jobCardTechItem}>Javascript</div>
-            <div className={styles.jobCardTechItem}>HTML</div>
-          </div>
+
+          {/* Adding relavant tech stack bubbles */}
+          {props.technologies !== undefined && props.technologies !== "" ? (
+            <div className={styles.jobCardTechStack}>
+              {props.technologies.split(",").map((element) => {
+                return <div className={styles.jobCardTechItem}>{element}</div>;
+              })}
+            </div>
+          ) : (
+            <></>
+          )}
         </div>
       </div>
       {/* </a> */}

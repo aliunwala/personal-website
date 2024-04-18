@@ -157,7 +157,6 @@ export default function Home() {
                 // dates="2020-2023"
                 title="ibm.com/able"
                 titleLink="https://www.ibm.com/able/"
-                technologies=""
                 goal="This site acts as a reference for IBMers builing accessible products within the company. Built over 90% of the front end with React and Node and deployed using docker containers to IBM Cloud
                 <br></br>
                 This work was featured by 
@@ -168,6 +167,7 @@ export default function Home() {
                 <a href='https://www.zdnet.com/article/ibm-rolls-out-tools-to-help-developers-ensure-apps-are-accessible/'>ZDNET</a>,
                  and several others."
                 image="/IBMbee2.png"
+                technologies="React,Node,Docker"
               ></ProjectCard>
               <ProjectCard
                 id="checker"

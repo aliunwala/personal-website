@@ -3,11 +3,11 @@ import styles from "./ProjectCard.module.css";
 export default function ProjectCard(props) {
   return (
     <>
-      {/* <a href="https://www.w3schools.com"> */}
       <div
         id={props.id === undefined ? "" : props.id}
         className={styles.projectCard}
       >
+        {/* Setting up title of card with a link if it exists */}
         {props.titleLink !== undefined ? (
           <div className={styles.projectCardRow}>
             <a
@@ -43,6 +43,7 @@ export default function ProjectCard(props) {
         )}
 
         <div className={styles.projectCardContiner}>
+          {/* Left side of card with image */}
           <div className={[styles.projectCardLeft, "textXS"].join(" ")}>
             <img
               src={props.image}
@@ -53,14 +54,24 @@ export default function ProjectCard(props) {
             />
           </div>
           <div className={styles.projectCardRight}>
+            {/* Body text of card */}
             <p
               className={styles.projectCardBody}
               dangerouslySetInnerHTML={{ __html: props.goal }}
             ></p>
-            <div className={styles.projectCardTechStack}>
-              <div className={styles.projectCardTechItem}>Javascript</div>
-              <div className={styles.projectCardTechItem}>HTML</div>
-            </div>
+
+            {/* Adding relavant tech stack bubbles */}
+            {props.technologies !== undefined && props.technologies !== "" ? (
+              <div className={styles.projectCardTechStack}>
+                {props.technologies.split(",").map((element) => {
+                  return (
+                    <div className={styles.projectCardTechItem}>{element}</div>
+                  );
+                })}
+              </div>
+            ) : (
+              <></>
+            )}
           </div>
         </div>
       </div>
