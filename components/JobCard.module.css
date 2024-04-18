@@ -37,6 +37,7 @@
 .jobCardTechStack {
   display: flex;
   gap: 8px;
+  flex-wrap: wrap;
 }
 .jobCardRow {
   display: flex;

@@ -92,7 +92,7 @@ export default function Home() {
                 description="With the goal of making all of IBM's products accessiblie, in this role I collaborated with design and content experts to build a cohesive product which helped 288k IBM employees make products available to people with disabilities 
                 <br></br>
                 (see the <a href='#projects'>projects</a> section for some of the work I did during this role <a href='#ableSite'>ibm.com/able</a> and <a href='#checker'>IBM Equal Access Accessibility Checker</a> to see some of my work). "
-                technologies="React,Node,Docker"
+                technologies="React,Node,Docker,Javascript,CSS,HTML,JSX,VSCode, Typescript,Node.js"
               ></JobCard>
               <JobCard
                 dates="2018-2020"

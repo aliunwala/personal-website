@@ -43,7 +43,8 @@
 }
 .projectCardTechStack {
   display: flex;
-  gap: 10px;
+  gap: 8px;
+  flex-wrap: wrap;
 }
 .projectCardRow {
   display: flex;
@@ -65,7 +66,7 @@
   background: var(--techBubble);
   border-radius: 16px;
   /* padding: 5px 5px 10px 10px; */
-  padding: 0.25rem 0.75rem;
+  padding: 0.15rem 0.55rem;
   font-weight: 500;
   line-height: 1.25rem;
   font-size: 0.75rem;
