@@ -82,7 +82,7 @@ body {
     display: none;
   }
 }
-@media (max-width: 1400px) {
+@media (max-width: 1024px) {
   .hideMeSmall {
     display: none;
   }

@@ -3,7 +3,6 @@
 }
 
 .educationCard {
-  display: flex;
   /* background-color: aquamarine; */
   /* } */
   /* .css-w88nxk { */
@@ -17,20 +16,21 @@
   /* max-width: 345px; */
   /* padding: 10px; */
   /* gap: 10px; */
-  flex-direction: column;
   /* margin: 0; */
   margin-bottom: 20px;
   border-radius: 4px;
   font-size: 14px;
-  justify-content: center;
   padding: 10px;
   color: var(--dullWhite);
 }
+.educationCardContainer {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+}
 .educationCard p {
-  margin: 0;
   color: var(--dullWhite);
   font-size: 14px;
-
   /* padding-left: 20px; */
 }
 
@@ -54,15 +54,18 @@
   font-size: 16px;
 }
 
-/* .educationCardLeft {
+.educationCardLeft {
   flex: 1 0 0;
-  letter-spacing: 0.025em;
-  text-transform: uppercase;
+  /* letter-spacing: 0.025em; */
+}
+.educationCardMiddle {
+  flex: 0.7 0 0;
+  /* letter-spacing: 0.025em; */
 }
 .educationCardRight {
-  flex: 3 0 0;
+  flex: 1 0 0;
 }
-.educationCardTechStack {
+/* .educationCardTechStack {
   display: flex;
   gap: 10px;
 } */
@@ -76,11 +79,12 @@
   color: var(--techText);
 } */
 
-/*
 .educationCardBody {
-  font-size: 14px;
-  line-height: 1.5;
-} */
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 8px;
+}
 
 /* .footer {
   width: 100%;

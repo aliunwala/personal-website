@@ -47,6 +47,12 @@ export default function Home() {
                 </a>
               </li>
               <li>
+                <a className="myNavA" href="#education">
+                  <span className="mySpacer"></span>
+                  <span>Education</span>
+                </a>
+              </li>
+              <li>
                 <a className="myNavA" href="#projects">
                   <span className="mySpacer"></span>
                   <span>Projects</span>
@@ -75,28 +81,6 @@ export default function Home() {
                 Donec quam neque, ultrices in pellentesque at, accumsan id
                 justo. Fusce pretium pharetra diam id consectetur.
               </p>
-            </section>
-
-            <section id="education">
-              <h2 className="sectionTitle">Education</h2>
-              <EducationCard
-                school="The University of Texas at Austin"
-                degree="Master of Science"
-                degreeLevel="Graduate"
-                department="Electrical and Computer Engineering"
-                GPA="3.8"
-                graduated="2014"
-                research="Robotics and Artificial Intelligence"
-                researchLink="https://repositories.lib.utexas.edu/items/efb21691-020e-484e-b27f-0ec020710f19"
-              ></EducationCard>
-              <EducationCard
-                school="The University of Texas at Austin"
-                degree="Bachelor of Science"
-                degreeLevel="Undergraduate"
-                department="Electrical and Computer Engineering"
-                GPA="3.67"
-                graduated="2012"
-              ></EducationCard>
             </section>
 
             <section id="experience">
@@ -142,6 +126,28 @@ export default function Home() {
                 "
                 technologies=""
               ></JobCard>
+            </section>
+
+            <section id="education">
+              <h2 className="sectionTitle">Education</h2>
+              <EducationCard
+                school="The University of Texas at Austin"
+                degree="Master of Science"
+                degreeLevel="Graduate"
+                department="Electrical and Computer Engineering"
+                GPA="3.8"
+                graduated="2014"
+                research="Robotics and Artificial Intelligence"
+                researchLink="https://repositories.lib.utexas.edu/items/efb21691-020e-484e-b27f-0ec020710f19"
+              ></EducationCard>
+              <EducationCard
+                school="The University of Texas at Austin"
+                degree="Bachelor of Science"
+                degreeLevel="Undergraduate"
+                department="Electrical and Computer Engineering"
+                GPA="3.67"
+                graduated="2012"
+              ></EducationCard>
             </section>
 
             <section id="projects">
