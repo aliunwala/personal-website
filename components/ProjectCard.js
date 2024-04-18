@@ -4,7 +4,10 @@ export default function ProjectCard(props) {
   return (
     <>
       {/* <a href="https://www.w3schools.com"> */}
-      <div className={styles.projectCard}>
+      <div
+        id={props.id === undefined ? "" : props.id}
+        className={styles.projectCard}
+      >
         {props.titleLink !== undefined ? (
           <div className={styles.projectCardRow}>
             <a

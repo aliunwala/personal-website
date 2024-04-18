@@ -7,6 +7,7 @@
   --techBubble: #5a5a08;
   /* --techBubble: #3b1e4c; */
   --techText: var(--brightWhite);
+  --linkHover: rgb(0, 94, 255);
 }
 
 html,
@@ -183,5 +184,11 @@ p {
 a {
   text-decoration: none;
   color: var(--brightWhite);
+  font-weight: 400;
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--linkHover);
   font-weight: 400;
 }

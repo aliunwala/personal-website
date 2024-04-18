@@ -89,9 +89,10 @@ export default function Home() {
                 dates="2020-2023"
                 title="IBM Design: Senior Software Engineer"
                 titleLink="https://www.ibm.com/design/"
-                description="Built over 90% of the front end of <a href='https://www.ibm.com/able/'>ibm.com/able</a> with React and Node and deployed using docker containers to IBM Cloud 
-                Collaborated with design and content experts to build a cohesive product which helped 288k IBM employees make products available to people with disabilities</>"
-                technologies=""
+                description="With the goal of making all of IBM's products accessiblie, in this role I collaborated with design and content experts to build a cohesive product which helped 288k IBM employees make products available to people with disabilities 
+                <br></br>
+                (see the <a href='#projects'>projects</a> section for some of the work I did during this role <a href='#ableSite'>ibm.com/able</a> and <a href='#checker'>IBM Equal Access Accessibility Checker</a> to see some of my work). "
+                technologies="React,Node,Docker"
               ></JobCard>
               <JobCard
                 dates="2018-2020"
@@ -104,26 +105,25 @@ export default function Home() {
                 dates="2015-2018"
                 title="IBM Watson: Cognitive Robotics Technical Lead"
                 titleLink="https://www.ibm.com/watson"
-                description="As a technical lead, I focused on finding value for IBM at the crossroads of cognitive computing and robotics. 
-                Due to my direct technical contributions this team grew from initially 2 people to nearly 20 people working in parallel in the pursuit of cognitive embodiments actively supported by 2 IBM Fellows, Grady Booch and Rob High."
+                description="I focused on finding value for IBM at the crossroads of cognitive computing and robotics. 
+                Due to my direct technical contributions this team grew from initially 2 people to nearly 20 people working in parallel in the pursuit of cognitive embodiments actively supported by 2 IBM Fellows, Grady Booch and Rob High.
+                <br></br>(see the <a href='#projects'>projects</a> section for some of the work I did during this role  <a href='#hilton'>Robotic Concierge - IBM Watson x Hilton</a>, <a href='#intu'>IBM Project Intu</a>, and <a href='#chef'>IBM Chef Watson</a> to see some of my work)
+                "
                 technologies=""
               ></JobCard>
               <JobCard
                 dates="2014-2014"
                 title="Teaching: CS 378 Autonomous Intelligent Robotics"
-                description="Primary teaching objective was to get freshmen engineering and computer science students interested in robotics research, and introduce them to a real robotics system.
-                Class dealt heavily with the segbot robotics platform (See Master’s Work) and taught basics from Robotic Operating System (ROS) all the way up to building a final project on the robot.
-                Taught around 40% of the lectures in the class. (The professor and myself took turns lecturing)"
+                description="This course's primary objective was to get freshmen engineering and computer science students interested in robotics research, and introduce them to a real robotics system.
+                Class dealt heavily with the segbot robotics platform and taught basics from Robotic Operating System (ROS) all the way up to building a final project on the robot.
+                I taught around 40% of the lectures in the class. (The professor and myself took turns lecturing)"
                 technologies=""
               ></JobCard>
               <JobCard
                 dates="2011-2014"
                 title="Intel Corporation: Graduate Technical Intern"
                 titleLink="https://www.intel.com/content/www/us/en/homepage.html"
-                description="Worked in pre-silicon validation, verifying Intel’s mobile processors (Atom, Celeron and Pentium) before they are sent for fabrication. 
-                Design for test team: Verified the test access ports on the chip so that after chips were fabricated various fuses could be set to allow reading the state of the chip for debugging purposes.
-                CPU power management team: 1) Worked with routing signals coming out of the CPU and the power management unit. 2) Validated the L2 Cache and the Voltage Control Unit. 3) Wrote various tests to automatically find failure cases for unstable power states in the CPU.
-                "
+                description="Worked in pre-silicon validation, verifying Intel’s mobile processors (Atom, Celeron and Pentium) before they are sent for fabrication."
                 technologies=""
               ></JobCard>
             </section>
@@ -153,22 +153,94 @@ export default function Home() {
             <section id="projects">
               <h2 className="sectionTitle">Projects</h2>
               <ProjectCard
+                id="ableSite"
                 // dates="2020-2023"
-                title="Building Wide Intelligence (BWI): Segbot"
-                titleLink="https://repositories.lib.utexas.edu/items/efb21691-020e-484e-b27f-0ec020710f19"
-                // titleLink="https://www.ibm.com/design/"
+                title="ibm.com/able"
+                titleLink="https://www.ibm.com/able/"
                 technologies=""
-                goal="To create a coupled robotics/AI system that could traverse multiple floors in the building to deliver coffee to various individuals."
-                image="/bwi1.jpg"
+                goal="This site acts as a reference for IBMers builing accessible products within the company. Built over 90% of the front end with React and Node and deployed using docker containers to IBM Cloud
+                <br></br>
+                This work was featured by 
+                <a href='https://www.forbes.com/sites/stevenaquino/2020/05/19/ibm-launches-open-source-equal-access-toolkit/?sh=918fe631f776'>Forbes</a>,
+                <a href='https://www.infoq.com/news/2020/05/ibm-accessibility-checker/'>InfoQ</a>,
+                <a href='https://betanews.com/2020/05/18/ibm-equal-access-toolkit/'>betanews</a>,
+                <a href='https://www.linux.com/news/ibm-launches-equal-access-toolkit-to-help-developers-build-accessible-websites-and-applications/'>linux.com</a>,
+                <a href='https://www.zdnet.com/article/ibm-rolls-out-tools-to-help-developers-ensure-apps-are-accessible/'>ZDNET</a>,
+                 and several others."
+                image="/IBMbee2.png"
+              ></ProjectCard>
+              <ProjectCard
+                id="checker"
+                // dates="2020-2023"
+                title="IBM Equal Access Accessibility Checker"
+                titleLink="https://chromewebstore.google.com/detail/ibm-equal-access-accessib/lkcagbfjnkomcinoddgooolagloogehp?pli=1"
+                technologies=""
+                goal="This web extension allows users to automatically check for accessiblity issues on any websites they own. I contributed a dynamically drawn visualization that highlights accessibility bugs that a user has on their webpage.
+                <br></br>
+                This work was featured by 
+                <a href='https://venturebeat.com/business/ibm-upgrades-web-accessibility-tool-for-finding-and-fixing-issues/'>VentureBeat</a>
+                 and
+                <a href='https://www.csun.edu/cod/conference/sessions/2022/index.php/public/presentations/view/2348'>CSUN</a>
+                ."
+                image="/IBMchecker.png"
               ></ProjectCard>
               <ProjectCard
                 // dates="2020-2023"
-                title="Website: ibm.com/able"
-                titleLink="https://www.ibm.com/able/"
-                // titleLink="https://www.ibm.com/design/"
+                id="hilton"
+                title="Robotic Concierge - IBM Watson x Hilton"
+                titleLink="http://fortune.com/2016/03/09/hilton-robot-ibm-watson/"
                 technologies=""
-                goal="Webpage to provide accessiblity guidance to every IBM employee. I was lucky enough the be main front end developer for the redesign of this page. "
-                image="/IBMbee2.png"
+                goal="Built a highly successful robotic concierge called “Connie” in partnership with Hilton Hotels. The robotic concierge is was operating at Hilton’s proving-ground for innovation in Washington DC. 
+                The robotic concierge, powered by Watson, is designed to help customers navigate the hotel and the surrounding area using natural language.
+                <br></br>
+                This work was featured by 
+                <a href='http://www.foxnews.com/travel/2016/03/09/hilton-ibm-pilot-first-watson-enabled-robot-concierge.html'>Fox News</a>,
+                <a href='http://www.theverge.com/2016/3/9/11180418/hilton-ibm-connie-robot-watson-hotel-concierge'>The Verge</a>,
+                <a href='http://arstechnica.com/gadgets/2016/03/ibm-watson-hilton-robot-connie/'>Ars Technica</a>,
+                <a href='http://fortune.com/2016/03/09/hilton-robot-ibm-watson/'>Fortune</a>,
+                <a href='http://www.usatoday.com/story/travel/roadwarriorvoices/2016/03/09/introducing-connie-hiltons-new-robot-concierge/81525924/'>USA Today</a>,
+                <a href='http://time.com/4251412/ibm-hilton-robot-hotel/'>Time</a> and several others."
+                image="/IBMNao.webp"
+              ></ProjectCard>
+              <ProjectCard
+                // dates="2020-2023"
+                id="intu"
+                title="IBM Project Intu"
+                titleLink="http://www.zdnet.com/article/ibms-watson-ai-could-soon-be-in-devices-from-pcs-to-robots-thanks-to-project-intu/"
+                technologies=""
+                goal="A framework for integration of IBM’s Artificial Intelligence services on to a multitude of different platforms, including robotics. Allowing any device with a CPU, microphone, and speakers to talk to Watson.
+                <br></br>
+                This work was featured by 
+                <a href='http://www.zdnet.com/article/ibms-watson-ai-could-soon-be-in-devices-from-pcs-to-robots-thanks-to-project-intu/'>ZDNET</a>,
+                <a href='https://thestack.com/iot/2016/11/09/ibm-extends-watson-capabilities-to-any-connected-device/'>The Stack</a>,
+                <a href='https://siliconangle.com/blog/2016/11/09/ibm-offers-developers-a-way-to-extend-watsons-capabilities-into-any-device/'>Silicon Angle</a>,
+                <a href='https://www.prnewswire.com/news-releases/ibm-launches-experimental-platform-for-embedding-watson-into-any-device-300359719.html'>PR News Wire</a>, and several others."
+                image="/IBMIntu.jpg"
+              ></ProjectCard>
+              <ProjectCard
+                // dates="2020-2023"
+                id="chef"
+                title="IBM Chef Watson"
+                titleLink="https://www.theguardian.com/technology/2016/jun/04/man-v-machine-robots-artificial-intelligence-cook-write"
+                technologies=""
+                goal="This application allows the robot to act as an active kitchen assistant that will go through ingredients with you and then create a dynamically generated recipe for you to cook. I worked with the team to get this code functional on the Nao robotics platform.
+                <br></br>
+                This work was featured by 
+                <a href='https://www.theguardian.com/technology/2016/jun/04/man-v-machine-robots-artificial-intelligence-cook-write'>The Guardian</a>,
+                <a href='https://www.washingtonpost.com/lifestyle/food/could-ibms-watson-eventually-replace-creative-chefs-not-at-this-rate/2015/05/11/82a0a3ca-f29f-11e4-b2f3-af5479e6bbdd_story.html'>Washington Post</a>,
+                <a href='https://www.newyorker.com/magazine/2016/11/28/cooking-with-chef-watson-ibms-artificial-intelligence-app'>The New Yorker</a>,
+                <a href='https://www.bonappetit.com/entertaining-style/trends-news/article/chef-watson-app'>bon appetit</a>,
+                 and several others."
+                image="/IBMChef.avif"
+              ></ProjectCard>
+              <ProjectCard
+                // dates="2020-2023"
+                id="segbot"
+                title="Building Wide Intelligence"
+                titleLink="https://repositories.lib.utexas.edu/items/efb21691-020e-484e-b27f-0ec020710f19"
+                technologies=""
+                goal="Created a coupled robotics/AI system that could traverse multiple floors in the building to deliver coffee to various individuals."
+                image="/bwi1.jpg"
               ></ProjectCard>
             </section>
 

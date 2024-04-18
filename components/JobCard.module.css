@@ -3,7 +3,9 @@
 }
 
 .jobCardLink:hover {
-  color: rgb(0, 94, 255);
+  color: var(--linkHover);
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .jobCard {

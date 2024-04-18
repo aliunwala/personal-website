@@ -35,7 +35,7 @@
 }
 
 .educationCard a:hover {
-  color: var(--brightWhite);
+  color: var(--linkHover);
 }
 
 .educationCard svg {
