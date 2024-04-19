@@ -30,6 +30,12 @@
   gap: 10px;
 }
 
+@media (max-width: 600px) {
+  .projectCardContiner {
+    flex-direction: column;
+  }
+}
+
 .projectCardLeft {
   flex: 1 0 0;
   letter-spacing: 0.025em;
