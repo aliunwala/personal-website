@@ -89,34 +89,38 @@ export default function Home() {
                 dates="2020-2023"
                 title="IBM Design: Senior Software Engineer"
                 titleLink="https://www.ibm.com/design/"
-                description="With the goal of making all of IBM's products accessiblie, in this role I collaborated with design and content experts to build a cohesive product which helped 288k IBM employees make products available to people with disabilities 
+                description="
+                In this role I collaborated with design and accessiblity experts to build a cohesive website which helped 288k IBM employees make products available to people with disabilities
                 <br></br>
-                (see the <a href='#projects'>projects</a> section for some of the work I did during this role <a href='#ableSite'>ibm.com/able</a> and <a href='#checker'>IBM Equal Access Accessibility Checker</a> to see some of my work). "
+                See the <a href='#projects'>projects</a> section for some of the work I did during this role: <a href='#ableSite'>ibm.com/able</a> and <a href='#checker'>IBM Equal Access Accessibility Checker</a>."
                 technologies="React,Node,Docker,Javascript,CSS,HTML,JSX,VSCode,Typescript,Node.js,CouchDB"
               ></JobCard>
               <JobCard
                 dates="2018-2020"
                 title="IBM Research: Senior Software Engineer"
                 titleLink="https://research.ibm.com/"
-                description="Architected and programmed automated code to scan html pages creating an event driven architecture which checked the accessibility on web pages"
+                description="
+                This team focused on accessiblity research at IBM. With their accessiblity expertise I got the chance to implement code to scan websites for accesiblity bugs."
                 technologies="Javascript,CSS,HTML,VSCode,Node.js"
               ></JobCard>
               <JobCard
                 dates="2015-2018"
                 title="IBM Watson: Cognitive Robotics Technical Lead"
                 titleLink="https://www.ibm.com/watson"
-                description="I focused on finding value for IBM at the crossroads of cognitive computing and robotics. 
-                Due to my direct technical contributions this team grew from initially 2 people to nearly 20 people working in parallel in the pursuit of cognitive embodiments actively supported by 2 IBM Fellows, Grady Booch and Rob High.
-                <br></br>(see the <a href='#projects'>projects</a> section for some of the work I did during this role  <a href='#hilton'>Robotic Concierge - IBM Watson x Hilton</a>, <a href='#intu'>IBM Project Intu</a>, and <a href='#chef'>IBM Chef Watson</a> to see some of my work)
+                description="
+                This role was a very unique opportunity where I was challenged to find value for IBM at the crossroads of cognitive computing and robotics. I lead a small technical team to create several influential projects using Watson AI services. 
+                <br></br>
+                See the <a href='#projects'>projects</a> section for some of the work I did during this role:  <a href='#hilton'>Robotic Concierge - IBM Watson x Hilton</a>, <a href='#intu'>IBM Project Intu</a>, and <a href='#chef'>IBM Chef Watson</a>.
                 "
                 technologies="REST,Python,MATLAB,Vim,Unix/Linux,CouchDB,Robotics Operating System,Point Cloud Library,Open Computer Vision (OpenCV),Watson Bluemix API,Nao Robot,Pepper Robot"
               ></JobCard>
               <JobCard
                 dates="2014-2014"
-                title="Teaching: CS 378 Autonomous Intelligent Robotics"
-                description="This course's primary objective was to get freshmen engineering and computer science students interested in robotics research, and introduce them to a real robotics system.
-                Class dealt heavily with the segbot robotics platform and taught basics from Robotic Operating System (ROS) all the way up to building a final project on the robot.
-                I taught around 40% of the lectures in the class. (The professor and myself took turns lecturing)"
+                title="Univesity of Texas at Austin: CS 378 Autonomous Intelligent Robotics"
+                description="
+                This course introduced students to a real robotics system, the Segbot platform. The Segbot is a homegrown autonomous robot built on a segway base. I taught 40% of the lectures in the class.
+                <br></br>
+                See the <a href='#segbot'>Building Wide Intelligence</a> section to learn more about the Segbot platform"
                 technologies="Python,MATLAB,Vim,Unix/Linux,Robotics Operating System,Point Cloud Library,Open Computer Vision (OpenCV),Segbot Robot"
               ></JobCard>
               <JobCard
@@ -157,7 +161,7 @@ export default function Home() {
                 // dates="2020-2023"
                 title="ibm.com/able"
                 titleLink="https://www.ibm.com/able/"
-                goal="This site acts as a reference for IBMers builing accessible products within the company. Built over 90% of the front end with React and Node and deployed using docker containers to IBM Cloud
+                goal="This site acts as a reference for IBMers builing accessible products within the company. I implemented over 90% of the front end (as of 2022) with React and Node and deployed the site using docker containers to IBM Cloud
                 <br></br>
                 This work was featured by 
                 <a href='https://www.forbes.com/sites/stevenaquino/2020/05/19/ibm-launches-open-source-equal-access-toolkit/?sh=918fe631f776'>Forbes</a>,
@@ -189,8 +193,7 @@ export default function Home() {
                 id="hilton"
                 title="Robotic Concierge - IBM Watson x Hilton"
                 titleLink="http://fortune.com/2016/03/09/hilton-robot-ibm-watson/"
-                goal="Built a highly successful robotic concierge called “Connie” in partnership with Hilton Hotels. The robotic concierge is was operating at Hilton’s proving-ground for innovation in Washington DC. 
-                The robotic concierge, powered by Watson, is designed to help customers navigate the hotel and the surrounding area using natural language.
+                goal="I built a highly successful robotic concierge called “Connie” in partnership with Hilton Hotels. The robotic concierge is was operating at Hilton’s proving-ground for innovation in Washington DC. The robotic concierge, powered by Watson, is designed to help customers navigate the hotel and the surrounding area using natural language.
                 <br></br>
                 This work was featured by 
                 <a href='http://www.foxnews.com/travel/2016/03/09/hilton-ibm-pilot-first-watson-enabled-robot-concierge.html'>Fox News</a>,
@@ -222,7 +225,7 @@ export default function Home() {
                 id="chef"
                 title="IBM Chef Watson"
                 titleLink="https://www.theguardian.com/technology/2016/jun/04/man-v-machine-robots-artificial-intelligence-cook-write"
-                goal="This application allows the robot to act as an active kitchen assistant that will go through ingredients with you and then create a dynamically generated recipe for you to cook. I worked with the team to get this code functional on the Nao robotics platform.
+                goal="This application allows the robot to act as an active kitchen assistant that will go through ingredients with you and then create a dynamically generated recipe for you to cook. I worked in conjuntion with the Chef Watson team to get this code functional on the Nao robotics platform.
                 <br></br>
                 This work was featured by 
                 <a href='https://www.theguardian.com/technology/2016/jun/04/man-v-machine-robots-artificial-intelligence-cook-write'>The Guardian</a>,
@@ -244,10 +247,18 @@ export default function Home() {
               ></ProjectCard>
             </section>
 
-            <p>
-              TODO .... Something about how this page was made, consectetur
-              adipiscing elit. Curabitur in ante ac velit eleifend venenatis.
-              Donec quam neque, ultrices in pellentesque at, accumsan id justo
+            <p className="myFooter">
+              <a href="https://github.com/aliunwala/personal-website">
+                This site
+              </a>{" "}
+              was hand coded by me with design inspiration from some of{" "}
+              <a href="https://github.com/emmabostian/developer-portfolios">
+                these amazing sites
+              </a>
+              . Using <a href="https://code.visualstudio.com/">VSCode</a> to
+              create a <a href="https://nextjs.org/">Next.js</a> +{" "}
+              <a href="https://react.dev/">React</a> project and which was
+              deployed through <a href="https://www.netlify.com/">netify</a>.
             </p>
           </div>
         </div>

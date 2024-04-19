@@ -102,7 +102,7 @@ ul {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 0.875rem;
+  font-size: 12px;
   line-height: 1.25rem;
   margin: 0;
   padding-top: 20px;
@@ -191,4 +191,8 @@ a:hover {
   text-decoration: none;
   color: var(--linkHover);
   font-weight: 400;
+}
+
+.myFooter {
+  font-size: 14px;
 }
