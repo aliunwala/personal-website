@@ -52,6 +52,9 @@ body {
 * {
   box-sizing: border-box;
 }
+.column1 {
+  padding-left: 10px;
+}
 
 @media (min-width: 1024px) {
   .content {
@@ -64,6 +67,7 @@ body {
   .col {
     flex: 1 0 0;
     flex-grow: 1;
+    padding-left: 10px;
   }
   .column2 {
     display: flex;
@@ -167,6 +171,7 @@ ul {
   padding-bottom: 20px;
   margin-bottom: 16px;
   color: var(--brightWhite);
+  padding-left: 10px;
 }
 
 p {
@@ -195,4 +200,9 @@ a:hover {
 
 .myFooter {
   font-size: 14px;
+}
+
+.aboutText {
+  padding-left: 10px;
+  margin: 0px;
 }

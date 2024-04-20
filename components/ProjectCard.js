@@ -50,7 +50,8 @@ export default function ProjectCard(props) {
               fill="white"
               width="100%"
               height="auto"
-              alt={styles.title}
+              alt={props.imageAlt}
+              className={styles.projectCardImage}
             />
           </div>
           <div className={styles.projectCardRight}>

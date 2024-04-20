@@ -43,6 +43,11 @@ export default function JobCard(props) {
             <span className={styles.jobCardTitle}>{props.title}</span>
           )}
 
+          {/* Adding back dates if employment when card is smaller than a specific size */}
+          <div className={[styles.jobCardDatesSmall, "textXS"].join(" ")}>
+            {props.dates}
+          </div>
+
           {/* Main body of card */}
           <p
             className={styles.jobCardBody}
