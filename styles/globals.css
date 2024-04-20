@@ -97,10 +97,18 @@ ul {
   padding: 0;
   margin: 0;
 }
-/* .myNav {
-  display: flex;
-  align-items: center;
-} */
+.myNav {
+  padding-top: 40px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25rem;
+  margin: 0;
+  padding-bottom: 20px;
+  /* margin-bottom: 16px; */
+  color: var(--brightWhite);
+}
 .myNavA {
   text-decoration: none;
   letter-spacing: 0.1em;
@@ -203,6 +211,7 @@ a:hover {
 
 .myFooter {
   font-size: 14px;
+  padding-left: 10px;
 }
 
 .aboutText {

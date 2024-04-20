@@ -16,10 +16,10 @@ export default function Home() {
             <h1 className="myName">Ali Unwala</h1>
             <p className="myTitle">Senior Software Engineer</p>
             <p className="mySubTitle">
-              I build websites, robotics, and IoT systems that delight users. I
-              enjoy connecting technologies to create novel workflows.
+              I enjoy understanding how complex systems work and making unique
+              user interfaces that delight users
             </p>
-            <ul className="hideMeSmall myNav sectionTitle">
+            <ul className="hideMeSmall myNav">
               <li>
                 <a className="myNavA" href="#about">
                   <span className="mySpacer"></span>
@@ -42,6 +42,12 @@ export default function Home() {
                 <a className="myNavA" href="#projects">
                   <span className="mySpacer"></span>
                   <span>Projects</span>
+                </a>
+              </li>
+              <li>
+                <a className="myNavA" href="#aboutsite">
+                  <span className="mySpacer"></span>
+                  <span>About the site</span>
                 </a>
               </li>
             </ul>
@@ -270,38 +276,42 @@ export default function Home() {
               ></ProjectCard>
             </section>
 
-            <p className="myFooter">
-              <a
-                target="_blank"
-                href="https://github.com/aliunwala/personal-website"
-              >
-                This site
-              </a>{" "}
-              was hand coded by me with design inspiration from some of{" "}
-              <a
-                target="_blank"
-                href="https://github.com/emmabostian/developer-portfolios"
-              >
-                these amazing sites
-              </a>
-              . Using{" "}
-              <a target="_blank" href="https://code.visualstudio.com/">
-                VSCode
-              </a>{" "}
-              to create a{" "}
-              <a target="_blank" href="https://nextjs.org/">
-                Next.js
-              </a>{" "}
-              +{" "}
-              <a target="_blank" href="https://react.dev/">
-                React
-              </a>{" "}
-              project and which was deployed through{" "}
-              <a target="_blank" href="https://www.netlify.com/">
-                netify
-              </a>
-              .
-            </p>
+            <section id="aboutsite">
+              <h2 className="sectionTitle">About the site</h2>
+              <p className="myFooter">
+                <a
+                  target="_blank"
+                  href="https://github.com/aliunwala/personal-website"
+                >
+                  This site
+                </a>{" "}
+                was hand coded by me (no templates or borrowed code) with design
+                inspiration from some of{" "}
+                <a
+                  target="_blank"
+                  href="https://github.com/emmabostian/developer-portfolios"
+                >
+                  these amazing sites
+                </a>
+                . Using{" "}
+                <a target="_blank" href="https://code.visualstudio.com/">
+                  VSCode
+                </a>{" "}
+                to create a{" "}
+                <a target="_blank" href="https://nextjs.org/">
+                  Next.js
+                </a>{" "}
+                +{" "}
+                <a target="_blank" href="https://react.dev/">
+                  React
+                </a>{" "}
+                project and which was deployed through{" "}
+                <a target="_blank" href="https://www.netlify.com/">
+                  netify
+                </a>
+                .
+              </p>
+            </section>
           </div>
         </div>
       </main>
