@@ -7,19 +7,7 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        {/* <html lang="en"></html> */}
         <title>Ali Unwala</title>
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="preconnect" href="https://fonts.googleapis.com"></link>
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossorigin
-        ></link>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
-          rel="stylesheet"
-        ></link>
       </Head>
 
       <main>
