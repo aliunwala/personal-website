@@ -2,16 +2,15 @@ import Head from "next/head";
 import Header from "@components/Header";
 import Footer from "@components/Footer";
 import JobCard from "@components/JobCard";
-// import EducationCard from "@components/EducationCard";
 import EducationCard from "@components/EducationCard";
 import ProjectCard from "@components/ProjectCard";
-import { Helmet, HelmetProvider } from "react-helmet-async";
 
 export default function Home() {
   return (
-    <div className="container" lang="en">
+    <div className="container">
       <Head>
-        <title>Next.js Starter!</title>
+        <html lang="en" />
+        <title>Ali Unwala</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com"></link>
         <link
