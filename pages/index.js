@@ -51,7 +51,7 @@ export default function Home() {
             <section id="about">
               <h2 className="sectionTitle hideMe">About</h2>
               <p className="aboutText">
-                I have always been a tinker at heart. I started young taking
+                I have always been a tinker at heart. I started young, taking
                 apart VCRs that had broken to understand how they worked. That
                 fascination led me to want to understand how the little black
                 tape inside the cassette tapes made pictures on a TV screen.
@@ -91,7 +91,7 @@ export default function Home() {
                   target="_blank"
                   href="https://maximumfun.org/podcasts/adventure-zone/"
                 >
-                  DnD podcasts.
+                  D&D podcasts.
                 </a>
               </p>
             </section>
