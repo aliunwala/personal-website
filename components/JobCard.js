@@ -57,8 +57,12 @@ export default function JobCard(props) {
           {/* Adding relavant tech stack bubbles */}
           {props.technologies !== undefined && props.technologies !== "" ? (
             <div className={styles.jobCardTechStack}>
-              {props.technologies.split(",").map((element) => {
-                return <div className={styles.jobCardTechItem}>{element}</div>;
+              {props.technologies.split(",").map((element, i) => {
+                return (
+                  <div key={props.id + i} className={styles.jobCardTechItem}>
+                    {element}
+                  </div>
+                );
               })}
             </div>
           ) : (

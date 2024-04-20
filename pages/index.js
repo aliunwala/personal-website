@@ -1,6 +1,4 @@
 import Head from "next/head";
-import Header from "@components/Header";
-import Footer from "@components/Footer";
 import JobCard from "@components/JobCard";
 import EducationCard from "@components/EducationCard";
 import ProjectCard from "@components/ProjectCard";
@@ -25,8 +23,8 @@ export default function Home() {
       </Head>
 
       <main>
-        <div class="content">
-          <div class="column1 col stickyItem">
+        <div className="content">
+          <div className="column1 col stickyItem">
             <h1 className="myName">Ali Unwala</h1>
             <p className="myTitle">Senior Software Engineer</p>
             <p className="mySubTitle">
@@ -60,7 +58,7 @@ export default function Home() {
               </li>
             </ul>
           </div>
-          <div class="column2 col">
+          <div className="column2 col">
             {/* dates, title, description, technologies */}
             <section id="about">
               <h2 className="sectionTitle hideMe">About</h2>

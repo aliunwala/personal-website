@@ -64,9 +64,14 @@ export default function ProjectCard(props) {
             {/* Adding relavant tech stack bubbles */}
             {props.technologies !== undefined && props.technologies !== "" ? (
               <div className={styles.projectCardTechStack}>
-                {props.technologies.split(",").map((element) => {
+                {props.technologies.split(",").map((element, i) => {
                   return (
-                    <div className={styles.projectCardTechItem}>{element}</div>
+                    <div
+                      key={props.id + i}
+                      className={styles.projectCardTechItem}
+                    >
+                      {element}
+                    </div>
                   );
                 })}
               </div>
