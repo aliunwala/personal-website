@@ -325,7 +325,7 @@ export default function Home() {
                 </a>{" "}
                 project and which was deployed through{" "}
                 <a target="_blank" href="https://www.netlify.com/">
-                  netify
+                  netlify
                 </a>
                 .
               </p>
