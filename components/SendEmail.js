@@ -13,6 +13,7 @@ export default function SendEmail(props) {
   // Nice compact example of useState/useEffect/useRef
   // https://stackoverflow.com/questions/58831750/how-to-add-event-in-react-functional-component
   const [tooltipTitle, setTooltipTitle] = useState("Copy Email");
+  const [tooltipIsOpen, settooltipIsOpen] = useState(false);
   const email = "aliunwalajobsearch@gmail.com";
   const innerRef = useRef(null);
 
@@ -25,10 +26,12 @@ export default function SendEmail(props) {
       tooltip.addEventListener("click", function (event) {
         copyTextToClipboard(email);
         setTooltipTitle("Copied");
+        settooltipIsOpen(true);
       });
 
       tooltip.addEventListener("mouseleave", function (event) {
         setTooltipTitle("Copy Email");
+        settooltipIsOpen(false);
       });
     }
     // https://stackoverflow.com/questions/400212/how-do-i-copy-to-the-clipboard-in-javascript
@@ -75,6 +78,7 @@ export default function SendEmail(props) {
   return (
     <>
       <Tooltip
+        open={tooltipIsOpen}
         className={"tooltip" + " " + props.className}
         ref={innerRef}
         // className={props.toolTipClass + " " + props.className}
