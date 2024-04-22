@@ -22,7 +22,7 @@ export default function Home() {
                 <p className="myTitle">Senior Software Engineer</p>
                 <p className="mySubTitle">
                   I enjoy understanding how complex systems work and making
-                  unique user interfaces that delight users
+                  unique user interfaces that delight users.
                 </p>
                 <ul className="hideMeSmall myNav">
                   <li>
@@ -127,7 +127,7 @@ export default function Home() {
                 title="IBM Design: Senior Software Engineer"
                 titleLink="https://www.ibm.com/design/"
                 description="
-                In this role I collaborated with design and accessibility experts to build a cohesive website which helped ~288k IBM employees make products available to people with disabilities
+                In this role I collaborated with design and accessibility experts to build a cohesive website which helped ~288k IBM employees make products available to people with disabilities.
                 <br></br>
                 See the <a href='#projects'>projects</a> section for some of the work I did during this role: <a href='#ableSite'>ibm.com/able</a> and <a href='#checker'>IBM Equal Access Accessibility Checker</a>."
                 id="IBMDesign"
@@ -167,7 +167,7 @@ export default function Home() {
                 dates="2011-2014"
                 title="Intel Corporation: Graduate Technical Intern"
                 titleLink="https://www.intel.com/content/www/us/en/homepage.html"
-                description="Worked in pre-silicon validation, verifying Intel’s mobile processors (Atom, Celeron and Pentium) before they are sent for fabrication."
+                description="Worked in pre-silicon validation, verifying Intel’s mobile processors (Atom, Celeron and Pentium) before they were sent for fabrication."
                 id="IntelIntern"
                 technologies="Java,C++,Assembly,C,Vim,Unix,TCL,Verilog,Perl,VHDL"
               ></JobCard>
@@ -202,7 +202,7 @@ export default function Home() {
                 // dates="2020-2023"
                 title="ibm.com/able"
                 titleLink="https://www.ibm.com/able/"
-                goal="This site acts as a reference for IBMers building accessible products within the company. I implemented over 90% of the front end (as of 2022) with React and Node and deployed the site using docker containers to IBM Cloud
+                goal="This site acts as a reference for IBMers building accessible products within the company. I implemented over 90% of the front end (as of 2022) with React and Node and deployed the site using docker containers to IBM Cloud.
                 <br></br>
                 This work was featured by 
                 <a target='_blank' href='https://www.forbes.com/sites/stevenaquino/2020/05/19/ibm-launches-open-source-equal-access-toolkit/?sh=918fe631f776'>Forbes</a>,
@@ -236,7 +236,7 @@ export default function Home() {
                 id="hilton"
                 title="Robotic Concierge - IBM Watson x Hilton"
                 titleLink="http://fortune.com/2016/03/09/hilton-robot-ibm-watson/"
-                goal="I built a highly successful robotic concierge called “Connie” in partnership with Hilton Hotels. The robotic concierge is was operating at Hilton’s proving-ground for innovation in Washington DC. The robotic concierge, powered by Watson, is designed to help customers navigate the hotel and the surrounding area using natural language.
+                goal="I built a highly successful robotic concierge, called “Connie,” in partnership with Hilton Hotels. Connie was operating at Hilton’s proving-ground for innovation in Washington DC. The robotic concierge, powered by Watson, is designed to help customers navigate the hotel and the surrounding area using natural language.
                 <br></br>
                 This work was featured by 
                 <a target='_blank' href='http://www.foxnews.com/travel/2016/03/09/hilton-ibm-pilot-first-watson-enabled-robot-concierge.html'>Fox News</a>,
@@ -254,7 +254,7 @@ export default function Home() {
                 id="intu"
                 title="IBM Project Intu"
                 titleLink="http://www.zdnet.com/article/ibms-watson-ai-could-soon-be-in-devices-from-pcs-to-robots-thanks-to-project-intu/"
-                goal="A framework for integration of IBM’s Artificial Intelligence services on to a multitude of different platforms, including robotics. Allowing any device with a CPU, microphone, and speakers to talk to Watson.
+                goal="Project Intu is a framework for integration of IBM’s Artificial Intelligence services on to a multitude of different platforms, including robotics. Allowing any device with a CPU, microphone, and speakers to talk to Watson.
                 <br></br>
                 This work was featured by 
                 <a target='_blank' href='http://www.zdnet.com/article/ibms-watson-ai-could-soon-be-in-devices-from-pcs-to-robots-thanks-to-project-intu/'>ZDNET</a>,
@@ -270,7 +270,7 @@ export default function Home() {
                 id="chef"
                 title="IBM Chef Watson Robot"
                 titleLink="https://www.theguardian.com/technology/2016/jun/04/man-v-machine-robots-artificial-intelligence-cook-write"
-                goal="This application allows the robot to act as an active kitchen assistant that will go through ingredients with you and then create a dynamically generated recipe for you to cook. I worked in conjunction with the Chef Watson team to get this code functional on the Nao robotics platform.
+                goal="This application allows the robot to act as an active kitchen assistant that will explore ingredients with you and then create a dynamically generated recipe for you to cook. I worked in conjunction with the Chef Watson team to get this code functional on the Nao robotics platform.
                 <br></br>
                 This work was featured by 
                 <a target='_blank' href='https://www.theguardian.com/technology/2016/jun/04/man-v-machine-robots-artificial-intelligence-cook-write'>The Guardian</a>,
@@ -287,7 +287,7 @@ export default function Home() {
                 id="segbot"
                 title="Building Wide Intelligence"
                 titleLink="https://repositories.lib.utexas.edu/items/efb21691-020e-484e-b27f-0ec020710f19"
-                goal="Created a coupled robotics/AI system that could traverse multiple floors in the building to deliver coffee to various individuals."
+                goal="Worked on a robotics & AI system that could do autonomous navigation to traverse multiple floors in the building."
                 image="/bwi1.jpg"
                 imageAlt="The segbot robotics platform in University of Texas at Austin computer science building"
                 technologies="Python,MATLAB,Vim,Unix/Linux,Robotics Operating System,Point Cloud Library,Open Computer Vision (OpenCV),Segbot Robot"
@@ -303,8 +303,8 @@ export default function Home() {
                 >
                   This site
                 </a>{" "}
-                was hand coded by me (no templates or borrowed code) with design
-                inspiration from some of{" "}
+                was hand coded by me (without templates or borrowed code) with
+                design inspiration from some of{" "}
                 <a
                   target="_blank"
                   href="https://github.com/emmabostian/developer-portfolios"
