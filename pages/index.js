@@ -16,7 +16,7 @@ export default function Home() {
       <main>
         <div className="content">
           <div className="column1 col stickyItem">
-            <div className="leftNavAndQuicklinksSpacer hideMeSmall">
+            <div className="leftNavAndQuicklinksSpacer">
               <div>
                 <h1 className="myName">Ali Unwala</h1>
                 <p className="myTitle">Senior Software Engineer</p>
@@ -58,8 +58,8 @@ export default function Home() {
                 </ul>
               </div>
 
-              <div className="quickLinks">
-                <SendEmail className="hideMeSmall"></SendEmail>
+              <div className="quickLinks hideMeSmall">
+                <SendEmail></SendEmail>
               </div>
             </div>
           </div>
@@ -68,7 +68,7 @@ export default function Home() {
             <section>
               <a id="about" className="anchorOffset"></a>
 
-              <h2 className="sectionTitle sectionTitleFirst hideMe">About</h2>
+              <h2 className="sectionTitle hideMe">About</h2>
               <p className="aboutText">
                 I have always been a tinkerer at heart. I started young, taking
                 apart VCRs that had broken to understand how they worked. That
@@ -115,7 +115,7 @@ export default function Home() {
               </p>
               <p className="aboutText hideMe">
                 <br></br>
-                Get in touch: &nbsp;
+                Get in touch:
                 <SendEmail></SendEmail>
               </p>
             </section>

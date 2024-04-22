@@ -180,6 +180,7 @@ ul {
   max-width: 20rem;
   font-size: 14px;
   color: var(--dullWhite);
+  margin-bottom: 0px;
 }
 
 .sectionTitle {
@@ -194,10 +195,6 @@ ul {
   /* margin-bottom: 16px; */
   color: var(--brightWhite);
   padding-left: 10px;
-}
-
-.sectionTitleFirst {
-  padding-top: 0px;
 }
 
 p {
