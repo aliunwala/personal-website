@@ -23,20 +23,34 @@ export default function SendEmail(props) {
     const tooltip = innerRef.current;
 
     if (tooltip !== undefined && tooltip !== null) {
-      tooltip.addEventListener("click", function (event) {
+      let touchHandler = function () {
+        //Call this handler once and remove it
+        settooltipIsOpen(false);
+        setTimeout(() => {
+          setTooltipTitle("Copy Email");
+        }, "100");
+
+        document.body.removeEventListener("touchmove", touchHandler);
+        // console.log("touchmove");
+      };
+
+      let clickHandler = function (event) {
+        console.log("touchmove132121");
         copyTextToClipboard(email);
         setTooltipTitle("Copied");
         settooltipIsOpen(true);
-      });
+        document.body.addEventListener("touchmove", touchHandler);
+      };
 
+      tooltip.addEventListener("mouseover", () => {
+        settooltipIsOpen(true);
+      });
+      tooltip.addEventListener("click", clickHandler);
       tooltip.addEventListener("mouseleave", function (event) {
         settooltipIsOpen(false);
-        setTooltipTitle("Copy Email");
-      });
-
-      tooltip.addEventListener("touchmove", function (event) {
-        settooltipIsOpen(false);
-        setTooltipTitle("Copy Email");
+        setTimeout(() => {
+          setTooltipTitle("Copy Email");
+        }, "100");
       });
     }
     // https://stackoverflow.com/questions/400212/how-do-i-copy-to-the-clipboard-in-javascript
