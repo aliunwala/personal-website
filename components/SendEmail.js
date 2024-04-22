@@ -30,8 +30,13 @@ export default function SendEmail(props) {
       });
 
       tooltip.addEventListener("mouseleave", function (event) {
-        setTooltipTitle("Copy Email");
         settooltipIsOpen(false);
+        setTooltipTitle("Copy Email");
+      });
+
+      tooltip.addEventListener("touchmove", function (event) {
+        settooltipIsOpen(false);
+        setTooltipTitle("Copy Email");
       });
     }
     // https://stackoverflow.com/questions/400212/how-do-i-copy-to-the-clipboard-in-javascript
