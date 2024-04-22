@@ -2,7 +2,10 @@ import Head from "next/head";
 import JobCard from "@components/JobCard";
 import EducationCard from "@components/EducationCard";
 import ProjectCard from "@components/ProjectCard";
+import * as React from "react";
+import { useEffect, useState } from "react";
 
+import SendEmail from "@components/SendEmail";
 export default function Home() {
   return (
     <div className="container">
@@ -13,51 +16,59 @@ export default function Home() {
       <main>
         <div className="content">
           <div className="column1 col stickyItem">
-            <h1 className="myName">Ali Unwala</h1>
-            <p className="myTitle">Senior Software Engineer</p>
-            <p className="mySubTitle">
-              I enjoy understanding how complex systems work and making unique
-              user interfaces that delight users
-            </p>
-            <ul className="hideMeSmall myNav">
-              <li>
-                <a className="myNavA" href="#about">
-                  <span className="mySpacer"></span>
-                  <span>About</span>
-                </a>
-              </li>
-              <li>
-                <a className="myNavA" href="#experience">
-                  <span className="mySpacer"></span>
-                  <span>Experience</span>
-                </a>
-              </li>
-              <li>
-                <a className="myNavA" href="#education">
-                  <span className="mySpacer"></span>
-                  <span>Education</span>
-                </a>
-              </li>
-              <li>
-                <a className="myNavA" href="#projects">
-                  <span className="mySpacer"></span>
-                  <span>Projects</span>
-                </a>
-              </li>
-              <li>
-                <a className="myNavA" href="#aboutsite">
-                  <span className="mySpacer"></span>
-                  <span>About the site</span>
-                </a>
-              </li>
-            </ul>
+            <div className="leftNavAndQuicklinksSpacer hideMeSmall">
+              <div>
+                <h1 className="myName">Ali Unwala</h1>
+                <p className="myTitle">Senior Software Engineer</p>
+                <p className="mySubTitle">
+                  I enjoy understanding how complex systems work and making
+                  unique user interfaces that delight users
+                </p>
+                <ul className="hideMeSmall myNav">
+                  <li>
+                    <a className="myNavA" href="#about">
+                      <span className="mySpacer"></span>
+                      <span>About</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a className="myNavA" href="#experience">
+                      <span className="mySpacer"></span>
+                      <span>Experience</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a className="myNavA" href="#education">
+                      <span className="mySpacer"></span>
+                      <span>Education</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a className="myNavA" href="#projects">
+                      <span className="mySpacer"></span>
+                      <span>Projects</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a className="myNavA" href="#aboutsite">
+                      <span className="mySpacer"></span>
+                      <span>About the site</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="quickLinks">
+                <SendEmail className="hideMeSmall"></SendEmail>
+              </div>
+            </div>
           </div>
           <div className="column2 col">
             {/* dates, title, description, technologies */}
             <section id="about">
-              <h2 className="sectionTitle hideMe">About</h2>
+              <h2 className="sectionTitle sectionTitleFirst hideMe">About</h2>
               <p className="aboutText">
-                I have always been a tinker at heart. I started young, taking
+                I have always been a tinkerer at heart. I started young, taking
                 apart VCRs that had broken to understand how they worked. That
                 fascination led me to want to understand how the little black
                 tape inside the cassette tapes made pictures on a TV screen.
@@ -99,6 +110,11 @@ export default function Home() {
                 >
                   D&D podcasts.
                 </a>
+              </p>
+              <p className="aboutText hideMe">
+                <br></br>
+                Get in touch:
+                <SendEmail></SendEmail>
               </p>
             </section>
 
