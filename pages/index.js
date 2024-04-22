@@ -26,32 +26,32 @@ export default function Home() {
                 </p>
                 <ul className="hideMeSmall myNav">
                   <li>
-                    <a className="myNavA" href="#about">
-                      <span className="mySpacer"></span>
+                    <a className="myNavA navEffect" href="#about">
+                      {/* <span className="mySpacer"></span> */}
                       <span>About</span>
                     </a>
                   </li>
                   <li>
-                    <a className="myNavA" href="#experience">
-                      <span className="mySpacer"></span>
+                    <a className="myNavA navEffect" href="#experience">
+                      {/* <span className="mySpacer"></span> */}
                       <span>Experience</span>
                     </a>
                   </li>
                   <li>
-                    <a className="myNavA" href="#education">
-                      <span className="mySpacer"></span>
+                    <a className="myNavA navEffect" href="#education">
+                      {/* <span className="mySpacer"></span> */}
                       <span>Education</span>
                     </a>
                   </li>
                   <li>
-                    <a className="myNavA" href="#projects">
-                      <span className="mySpacer"></span>
+                    <a className="myNavA navEffect" href="#projects">
+                      {/* <span className="mySpacer"></span> */}
                       <span>Projects</span>
                     </a>
                   </li>
                   <li>
-                    <a className="myNavA" href="#aboutsite">
-                      <span className="mySpacer"></span>
+                    <a className="myNavA navEffect" href="#aboutsite">
+                      {/* <span className="mySpacer"></span> */}
                       <span>About the site</span>
                     </a>
                   </li>
@@ -65,7 +65,9 @@ export default function Home() {
           </div>
           <div className="column2 col">
             {/* dates, title, description, technologies */}
-            <section id="about">
+            <section>
+              <a id="about" className="anchorOffset"></a>
+
               <h2 className="sectionTitle sectionTitleFirst hideMe">About</h2>
               <p className="aboutText">
                 I have always been a tinkerer at heart. I started young, taking
@@ -113,7 +115,7 @@ export default function Home() {
               </p>
               <p className="aboutText hideMe">
                 <br></br>
-                Get in touch:
+                Get in touch: &nbsp;
                 <SendEmail></SendEmail>
               </p>
             </section>
