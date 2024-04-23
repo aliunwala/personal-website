@@ -127,11 +127,11 @@ export default function Home() {
                 title="IBM Design: Senior Software Engineer"
                 titleLink="https://www.ibm.com/design/"
                 description="
-                In this role I collaborated with design and accessibility experts to build a cohesive website which helped ~288k IBM employees make products available to people with disabilities.
+                In this role I collaborated with design and accessibility experts to contribute to a suite of web tools which helped nearly 300k IBM employees make products accessible to people with disabilities.
                 <br></br>
                 See the <a href='#projects'>projects</a> section for some of the work I did during this role: <a href='#ableSite'>ibm.com/able</a> and <a href='#checker'>IBM Equal Access Accessibility Checker</a>."
                 id="IBMDesign"
-                technologies="React,Node,Docker,Javascript,CSS,HTML,JSX,VSCode,Typescript,Node.js,CouchDB"
+                technologies="React,Javascript,CSS,HTML,JSX,VSCode,Typescript,Node.js,Docker,CouchDB"
               ></JobCard>
               <JobCard
                 dates="2018-2020"
@@ -147,11 +147,11 @@ export default function Home() {
                 title="IBM Watson: Cognitive Robotics Technical Lead"
                 titleLink="https://www.ibm.com/watson"
                 description="
-                This role was a very unique opportunity where I was challenged to find value for IBM at the crossroads of cognitive computing and robotics. I led a small technical team to create several influential projects using Watson AI services. 
+                This role was a very unique opportunity where I was challenged to find value for IBM at the crossroads of cognitive computing and robotics. I led a technical team to create several influential projects using Watson AI services. 
                 <br></br>
                 See the <a href='#projects'>projects</a> section for some of the work I did during this role:  <a href='#hilton'>Robotic Concierge - IBM Watson x Hilton</a>, <a href='#intu'>IBM Project Intu</a>, and <a href='#chef'>IBM Chef Watson</a>."
                 id="IBMWatson"
-                technologies="REST,Python,MATLAB,Vim,Unix/Linux,CouchDB,Robotics Operating System,Point Cloud Library,Open Computer Vision (OpenCV),Watson Bluemix API,Nao Robot,Pepper Robot"
+                technologies="REST,Python,MATLAB,Vim,Unix/Linux,CouchDB,Robotics Operating System,Point Cloud Library,Open Computer Vision (OpenCV),Watson AI APIs,Nao Robot,Pepper Robot"
               ></JobCard>
               <JobCard
                 dates="2014-2014"
@@ -213,7 +213,7 @@ export default function Home() {
                  and several others."
                 image="/IBMbee2.png"
                 imageAlt="logo for the website ibm.com/able"
-                technologies="React,Node,Docker,Javascript,CSS,HTML,JSX,VSCode,Typescript,Node.js,CouchDB"
+                technologies="React,Javascript,CSS,HTML,JSX,VSCode,Typescript,Node.js,Docker,CouchDB"
               ></ProjectCard>
               <ProjectCard
                 id="checker"
@@ -225,11 +225,10 @@ export default function Home() {
                 This work was featured by 
                 <a target='_blank' href='https://venturebeat.com/business/ibm-upgrades-web-accessibility-tool-for-finding-and-fixing-issues/'>VentureBeat</a>
                  and
-                <a target='_blank' href='https://www.csun.edu/cod/conference/sessions/2022/index.php/public/presentations/view/2348'>CSUN</a>
-                ."
+                <a target='_blank' href='https://www.csun.edu/cod/conference/sessions/2022/index.php/public/presentations/view/2348'>CSUN</a>."
                 image="/IBMchecker.png"
                 imageAlt="screen shot of the IBM Equal Access Accessibility Checker running a accesibility scan on a page"
-                technologies="React,Node,Javascript,CSS,HTML,VSCode,Typescript,Node.js,Chrome Extension"
+                technologies="React,Javascript,CSS,HTML,VSCode,Typescript,Node.js,Chrome Extension"
               ></ProjectCard>
               <ProjectCard
                 // dates="2020-2023"
@@ -247,7 +246,7 @@ export default function Home() {
                 <a target='_blank' href='http://time.com/4251412/ibm-hilton-robot-hotel/'>Time</a> and several others."
                 image="/IBMNao.webp"
                 imageAlt="Some guests at Hilton chatting with the IBM Watson robot"
-                technologies="REST,Python,Vim,Unix/Linux,CouchDB,Robotics Operating System,Point Cloud Library,Open Computer Vision (OpenCV),Watson Bluemix API,Nao Robot"
+                technologies="REST,Python,Vim,Unix/Linux,CouchDB,Robotics Operating System,Point Cloud Library,Open Computer Vision (OpenCV),Watson AI APIs,Nao Robot"
               ></ProjectCard>
               <ProjectCard
                 // dates="2020-2023"
@@ -263,7 +262,7 @@ export default function Home() {
                 <a target='_blank' href='https://www.prnewswire.com/news-releases/ibm-launches-experimental-platform-for-embedding-watson-into-any-device-300359719.html'>PR News Wire</a>, and several others."
                 image="/IBMIntu.jpg"
                 imageAlt="Image of Rob High doing a keynote presentation about IBM Project Intu"
-                technologies="REST,Python,CouchDB,Watson Bluemix API,Nao Robot,Pepper Robot"
+                technologies="REST,Python,CouchDB,Watson AI APIs,Nao Robot,Pepper Robot"
               ></ProjectCard>
               <ProjectCard
                 // dates="2020-2023"
@@ -280,7 +279,7 @@ export default function Home() {
                  and several others."
                 image="/IBMChef.avif"
                 imageAlt="The chef watson robot talking to a chef in a relaxed pose"
-                technologies="REST,Python,Robotics Operating System,Watson Bluemix API,Nao Robot,Pepper Robot"
+                technologies="REST,Python,Robotics Operating System,Watson AI APIs,Nao Robot,Pepper Robot"
               ></ProjectCard>
               <ProjectCard
                 // dates="2020-2023"
