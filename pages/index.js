@@ -131,7 +131,7 @@ export default function Home() {
                 <br></br>
                 See the <a href='#projects'>projects</a> section for some of the work I did during this role: <a href='#ableSite'>ibm.com/able</a> and <a href='#checker'>IBM Equal Access Accessibility Checker</a>."
                 id="IBMDesign"
-                technologies="React,Javascript,CSS,HTML,JSX,VSCode,Typescript,Node.js,Docker,CouchDB"
+                technologies="React,Javascript,CSS,HTML,JSX,VSCode,Typescript,Node.js,Docker,Gatsby,CouchDB"
               ></JobCard>
               <JobCard
                 dates="2018-2020"
