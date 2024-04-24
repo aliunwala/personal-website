@@ -70,10 +70,17 @@ export default function Home() {
 
               <h2 className="sectionTitle hideMe">About</h2>
               <p className="aboutText">
-                I have always been a tinkerer at heart. I started young, taking
-                apart VCRs that had broken to understand how they worked. That
-                fascination led me to want to understand how the little black
-                tape inside the cassette tapes made pictures on a TV screen.
+                I have always been a tinkerer at heart. One of my early memories
+                is of taking apart a{" "}
+                <a
+                  href="https://en.wikipedia.org/wiki/Videocassette_recorder"
+                  target="_blank"
+                >
+                  VCR
+                </a>{" "}
+                that had broken to understand how it worked. I was fascinated by
+                the black tape inside the cassette and how it was able to made
+                pictures on a TV screen.
                 <br></br>
                 <br></br>
                 Wanting to know how things work led me to electrical and
