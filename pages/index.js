@@ -79,8 +79,15 @@ export default function Home() {
                   VCR
                 </a>{" "}
                 that had broken to understand how it worked. I was fascinated by
-                the black tape inside the cassette and how it was able to made
-                pictures on a TV screen.
+                the{" "}
+                <a
+                  href="https://www.youtube.com/watch?v=KfuARMCyTvg"
+                  target="_blank"
+                >
+                  black tape
+                </a>{" "}
+                inside the cassette and how it was able to made pictures on a TV
+                screen.
                 <br></br>
                 <br></br>
                 Wanting to know how things work led me to electrical and
