@@ -73,7 +73,7 @@ export default function Home() {
                 I have always been a tinkerer at heart. One of my early memories
                 is of taking apart a{" "}
                 <a
-                  href="https://en.wikipedia.org/wiki/Videocassette_recorder"
+                  href="https://www.youtube.com/watch?v=lRNv4uM6auI"
                   target="_blank"
                 >
                   VCR
