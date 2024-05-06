@@ -70,8 +70,8 @@ export default function Home() {
 
               <h2 className="sectionTitle hideMe">About</h2>
               <p className="aboutText">
-                I have always been a tinkerer at heart. One of my early memories
-                is of taking apart a{" "}
+                I've always been a tinkerer at heart. One of my earliest
+                memories is taking apart a{" "}
                 <a
                   href="https://www.youtube.com/watch?v=lRNv4uM6auI"
                   target="_blank"
@@ -86,14 +86,13 @@ export default function Home() {
                 >
                   black tape
                 </a>{" "}
-                inside the cassette and how it was able to made pictures on a TV
-                screen.
+                inside the cassette and how it made pictures on a TV screen.
                 <br></br>
                 <br></br>
-                Wanting to know how things work led me to electrical and
-                computer engineering and eventually to the broader world of
-                software. Nowadays I enjoy creating some of those projects I
-                used to take apart as a kid.
+                Wanting to know how things work, I was inspired to explore
+                electrical and computer engineering and eventually the broader
+                world of software. Nowadays I enjoy building some of those
+                projects I used to take apart as a kid.
                 <br></br>
                 <br></br>
                 My passions are <i>
@@ -101,14 +100,14 @@ export default function Home() {
                 </i> and <i>playing with systems to make things better</i>.
                 <br></br>
                 <br></br>
-                While I am not coding I am collecting{" "}
+                When I'm not coding, I'm collecting{" "}
                 <a
                   target="_blank"
                   href="https://www.mindat.org/photoscroll.php?frm_id=pscroll&cform_is_valid=1&searchbox=Fluorite+from+Yaogangxian+Mine&submit_pscroll=Search"
                 >
                   mineral specimens
                 </a>
-                , playing table tennis or{" "}
+                , playing table tennis and{" "}
                 <a target="_blank" href="https://atxbadminton.com/">
                   badminton
                 </a>
@@ -141,7 +140,7 @@ export default function Home() {
                 title="IBM Design: Senior Software Engineer"
                 titleLink="https://www.ibm.com/design/"
                 description="
-                In this role I collaborated with design and accessibility experts to contribute to a suite of web tools which helped nearly 300k IBM employees make products accessible to people with disabilities.
+                In this role, I collaborated with design and accessibility experts to contribute to a suite of web tools which helped nearly 300k IBM employees make products accessible to people with disabilities.
                 <br></br>
                 See the <a href='#projects'>projects</a> section for some of the work I did during this role: <a href='#ableSite'>ibm.com/able</a> and <a href='#checker'>IBM Equal Access Accessibility Checker</a>."
                 id="IBMDesign"
@@ -152,7 +151,7 @@ export default function Home() {
                 title="IBM Research: Senior Software Engineer"
                 titleLink="https://research.ibm.com/"
                 description="
-                This team focused on accessibility research at IBM. With their accessibility expertise I got the chance to implement code to scan websites for accessibility bugs."
+                Our team focused on accessibility research at IBM. With the team's accessibility expertise, I implemented code to scan websites for accessibility bugs."
                 id="IBMResearch"
                 technologies="Javascript,CSS,HTML,VSCode,Node.js"
               ></JobCard>
@@ -161,17 +160,17 @@ export default function Home() {
                 title="IBM Watson: Cognitive Robotics Technical Lead"
                 titleLink="https://www.ibm.com/watson"
                 description="
-                This role was a very unique opportunity where I was challenged to find value for IBM at the crossroads of cognitive computing and robotics. I led a technical team to create several influential projects using Watson AI services. 
+                In this role, I tackled the challenge to find value for IBM at the crossroads of cognitive computing and robotics. I led a technical team to create several influential projects using Watson AI services. 
                 <br></br>
                 See the <a href='#projects'>projects</a> section for some of the work I did during this role:  <a href='#hilton'>Robotic Concierge - IBM Watson x Hilton</a>, <a href='#intu'>IBM Project Intu</a>, and <a href='#chef'>IBM Chef Watson</a>."
                 id="IBMWatson"
-                technologies="REST,Python,MATLAB,Vim,Unix/Linux,CouchDB,Robotics Operating System,Point Cloud Library,Open Computer Vision (OpenCV),Watson AI APIs,Nao Robot,Pepper Robot"
+                technologies="REST,Python,MATLAB,Vim,Unix/Linux,CouchDB,Robotics Operating System,Point Cloud Library,Open Computer Vision (OpenCV),Watson AI APIs,NAO Robot,Pepper Robot"
               ></JobCard>
               <JobCard
                 dates="2014-2014"
-                title="Univesity of Texas at Austin: CS 378 Autonomous Intelligent Robotics"
+                title="Univesity of Texas at Austin: Graduate Teaching Assistant"
                 description="
-                This course introduced students to a real robotics system, the Segbot platform. The Segbot is a homegrown autonomous robot built on a segway base. I taught 40% of the lectures in the class.
+                I taught CS 378 Autonomous Intelligent Robotics, introducing students to a real robotics system, the Segbot platform. The Segbot is a homegrown autonomous robot built on a segway base.
                 <br></br>
                 See the <a href='#segbot'>Building Wide Intelligence</a> section to learn more about the Segbot platform"
                 id="UTEXASTeaching"
@@ -181,7 +180,7 @@ export default function Home() {
                 dates="2011-2014"
                 title="Intel Corporation: Graduate Technical Intern"
                 titleLink="https://www.intel.com/content/www/us/en/homepage.html"
-                description="Worked in pre-silicon validation, verifying Intel’s mobile processors (Atom, Celeron and Pentium) before they were sent for fabrication."
+                description="Working in pre-silicon validation, I verified Intel’s mobile processors (Atom, Celeron and Pentium) before they were sent for fabrication."
                 id="IntelIntern"
                 technologies="Java,C++,Assembly,C,Vim,Unix,TCL,Verilog,Perl,VHDL"
               ></JobCard>
@@ -216,9 +215,9 @@ export default function Home() {
                 // dates="2020-2023"
                 title="ibm.com/able"
                 titleLink="https://www.ibm.com/able/"
-                goal="This site acts as a reference for IBMers building accessible products within the company. I implemented over 90% of the front end (as of 2022) with React and Node and deployed the site using docker containers to IBM Cloud.
+                goal="This site acts as a reference for IBMers building accessible products within the company. I implemented over 90% of the front end (in 2022) with React and Node and deployed the site using docker containers to IBM Cloud.
                 <br></br>
-                This work was featured by 
+                This work was featured in 
                 <a target='_blank' href='https://www.forbes.com/sites/stevenaquino/2020/05/19/ibm-launches-open-source-equal-access-toolkit/?sh=918fe631f776'>Forbes</a>,
                 <a target='_blank' href='https://www.infoq.com/news/2020/05/ibm-accessibility-checker/'>InfoQ</a>,
                 <a target='_blank' href='https://betanews.com/2020/05/18/ibm-equal-access-toolkit/'>betanews</a>,
@@ -234,9 +233,9 @@ export default function Home() {
                 // dates="2020-2023"
                 title="IBM Equal Access Accessibility Checker"
                 titleLink="https://chromewebstore.google.com/detail/ibm-equal-access-accessib/lkcagbfjnkomcinoddgooolagloogehp?pli=1"
-                goal="This web extension allows users to automatically check for accessibility issues on any websites they own. I contributed a dynamically drawn visualization that highlights accessibility bugs that a user has on their webpage.
+                goal="This web extension allows users to automatically check for accessibility issues on any website. I contributed a dynamically drawn visualization that highlights accessibility bugs on a webpage.
                 <br></br>
-                This work was featured by 
+                This work was featured in 
                 <a target='_blank' href='https://venturebeat.com/business/ibm-upgrades-web-accessibility-tool-for-finding-and-fixing-issues/'>VentureBeat</a>
                  and
                 <a target='_blank' href='https://www.csun.edu/cod/conference/sessions/2022/index.php/public/presentations/view/2348'>CSUN</a>."
@@ -249,9 +248,9 @@ export default function Home() {
                 id="hilton"
                 title="Robotic Concierge - IBM Watson x Hilton"
                 titleLink="http://fortune.com/2016/03/09/hilton-robot-ibm-watson/"
-                goal="I built a highly successful robotic concierge, called “Connie,” in partnership with Hilton Hotels. Connie was operating at Hilton’s proving-ground for innovation in Washington DC. The robotic concierge, powered by Watson, is designed to help customers navigate the hotel and the surrounding area using natural language.
+                goal="I built a highly interactive robotic concierge, called “Connie.” I partnered with Hilton Hotels to showcase Connie at Hilton’s proving-ground for innovation in Washington DC. This robotic concierge, powered by Watson, was designed to help customers navigate the hotel and the surrounding area using natural language.
                 <br></br>
-                This work was featured by 
+                This work was featured in 
                 <a target='_blank' href='http://www.foxnews.com/travel/2016/03/09/hilton-ibm-pilot-first-watson-enabled-robot-concierge.html'>Fox News</a>,
                 <a target='_blank' href='http://www.theverge.com/2016/3/9/11180418/hilton-ibm-connie-robot-watson-hotel-concierge'>The Verge</a>,
                 <a target='_blank' href='http://arstechnica.com/gadgets/2016/03/ibm-watson-hilton-robot-connie/'>Ars Technica</a>,
@@ -260,30 +259,33 @@ export default function Home() {
                 <a target='_blank' href='http://time.com/4251412/ibm-hilton-robot-hotel/'>Time</a> and several others."
                 image="/IBMNao.webp"
                 imageAlt="Some guests at Hilton chatting with the IBM Watson robot"
-                technologies="REST,Python,Vim,Unix/Linux,CouchDB,Robotics Operating System,Point Cloud Library,Open Computer Vision (OpenCV),Watson AI APIs,Nao Robot"
+                technologies="REST,Python,Vim,Unix/Linux,CouchDB,Robotics Operating System,Point Cloud Library,Open Computer Vision (OpenCV),Watson AI APIs,NAO Robot"
               ></ProjectCard>
               <ProjectCard
                 // dates="2020-2023"
                 id="intu"
                 title="IBM Project Intu"
                 titleLink="http://www.zdnet.com/article/ibms-watson-ai-could-soon-be-in-devices-from-pcs-to-robots-thanks-to-project-intu/"
-                goal="Project Intu is a framework for integration of IBM’s Artificial Intelligence services on to a multitude of different platforms, including robotics. Allowing any device with a CPU, microphone, and speakers to talk to Watson.
+                goal="Project Intu is an API for accessing IBM Watson services from devices that had proprietary interfaces (such as robotics platforms).
+                <br><br>
+                I developed a reverse proxy, API, and security framework to pass connections to IBM Watson’s cloud services. This allowed any device with a CPU, microphone, or speakers to talk to Watson.
                 <br></br>
-                This work was featured by 
+                This work was featured in 
                 <a target='_blank' href='http://www.zdnet.com/article/ibms-watson-ai-could-soon-be-in-devices-from-pcs-to-robots-thanks-to-project-intu/'>ZDNET</a>,
                 <a target='_blank' href='https://thestack.com/iot/2016/11/09/ibm-extends-watson-capabilities-to-any-connected-device/'>The Stack</a>,
                 <a target='_blank' href='https://siliconangle.com/blog/2016/11/09/ibm-offers-developers-a-way-to-extend-watsons-capabilities-into-any-device/'>Silicon Angle</a>,
                 <a target='_blank' href='https://www.prnewswire.com/news-releases/ibm-launches-experimental-platform-for-embedding-watson-into-any-device-300359719.html'>PR News Wire</a>, and several others."
                 image="/IBMIntu.jpg"
                 imageAlt="Image of Rob High doing a keynote presentation about IBM Project Intu"
-                technologies="REST,Python,CouchDB,Watson AI APIs,Nao Robot,Pepper Robot"
+                technologies="REST,Python,CouchDB,Watson AI APIs,NAO Robot,Pepper Robot"
               ></ProjectCard>
               <ProjectCard
                 // dates="2020-2023"
                 id="chef"
                 title="IBM Chef Watson Robot"
                 titleLink="https://www.theguardian.com/technology/2016/jun/04/man-v-machine-robots-artificial-intelligence-cook-write"
-                goal="This application allows the robot to act as an active kitchen assistant that will explore ingredients with you and then create a dynamically generated recipe for you to cook. I worked in conjunction with the Chef Watson team to get this code functional on the Nao robotics platform.
+                goal="
+                This application allows the robot to act as an active kitchen assistant that will explore ingredients with you and then create a dynamically generated recipe for you to cook. I collaborated with the Chef Watson team to bring Chef Watson to the NAO robotics platform.
                 <br></br>
                 This work was featured by 
                 <a target='_blank' href='https://www.theguardian.com/technology/2016/jun/04/man-v-machine-robots-artificial-intelligence-cook-write'>The Guardian</a>,
@@ -293,14 +295,14 @@ export default function Home() {
                  and several others."
                 image="/IBMChef.avif"
                 imageAlt="The chef watson robot talking to a chef in a relaxed pose"
-                technologies="REST,Python,Robotics Operating System,Watson AI APIs,Nao Robot,Pepper Robot"
+                technologies="REST,Python,Robotics Operating System,Watson AI APIs,NAO Robot,Pepper Robot"
               ></ProjectCard>
               <ProjectCard
                 // dates="2020-2023"
                 id="segbot"
                 title="Building Wide Intelligence"
                 titleLink="https://repositories.lib.utexas.edu/items/efb21691-020e-484e-b27f-0ec020710f19"
-                goal="Worked on a robotics & AI system that could do autonomous navigation to traverse multiple floors in the building."
+                goal="I worked on a robotics & AI system that autonomously navigated and traversed multiple floors in a building."
                 image="/bwi1.jpg"
                 imageAlt="The segbot robotics platform in University of Texas at Austin computer science building"
                 technologies="Python,MATLAB,Vim,Unix/Linux,Robotics Operating System,Point Cloud Library,Open Computer Vision (OpenCV),Segbot Robot"
@@ -316,8 +318,14 @@ export default function Home() {
                 >
                   This site
                 </a>{" "}
-                was hand coded by me (without templates or borrowed code) with
-                design inspiration from some of{" "}
+                was built by me (from scratch using only the{" "}
+                <a
+                  href="https://github.com/netlify-templates/next-netlify-starter"
+                  target="_blank"
+                >
+                  netlify starter
+                </a>
+                ) with design inspiration from some of{" "}
                 <a
                   target="_blank"
                   href="https://github.com/emmabostian/developer-portfolios"

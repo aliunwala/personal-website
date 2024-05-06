@@ -264,3 +264,7 @@ a.anchorOffset {
   top: -80px;
   visibility: hidden;
 }
+
+.tooltipButton:hover {
+  cursor: pointer;
+}

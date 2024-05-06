@@ -14,7 +14,7 @@ export default function SendEmail(props) {
   // https://stackoverflow.com/questions/58831750/how-to-add-event-in-react-functional-component
   const [tooltipTitle, setTooltipTitle] = useState("Copy Email");
   const [tooltipIsOpen, settooltipIsOpen] = useState(false);
-  const email = "aliunwalajobsearch@gmail.com";
+  const email = "aliunwaladev@gmail.com";
   const innerRef = useRef(null);
 
   useEffect(() => {
@@ -107,20 +107,20 @@ export default function SendEmail(props) {
         placement="top"
         arrow
         // style={{ padding: "4px" }}
-        slotProps={{
-          popper: {
-            modifiers: [
-              {
-                name: "offset",
-                options: {
-                  offset: [0, -14],
-                },
-              },
-            ],
-          },
-        }}
+        // slotProps={{
+        //   popper: {
+        //     modifiers: [
+        //       {
+        //         name: "offset",
+        //         options: {
+        //           offset: [0, -14],
+        //         },
+        //       },
+        //     ],
+        //   },
+        // }}
       >
-        <IconButton>
+        <IconButton className="tooltipButton">
           <EmailIcon sx={{ color: "#eeeeee" }} />
         </IconButton>
       </Tooltip>
