@@ -6,6 +6,7 @@ import * as React from "react";
 import { useEffect, useState } from "react";
 
 import SendEmail from "@components/SendEmail";
+import DownloadFile from "@components/DownloadFile";
 export default function Home() {
   return (
     <div className="container">
@@ -60,6 +61,7 @@ export default function Home() {
 
               <div className="quickLinks hideMeSmall">
                 <SendEmail></SendEmail>
+                <DownloadFile></DownloadFile>
               </div>
             </div>
           </div>
@@ -130,6 +132,9 @@ export default function Home() {
                 <br></br>
                 Get in touch:
                 <SendEmail></SendEmail>
+                <br></br>
+                Get my resume:
+                <DownloadFile></DownloadFile>
               </p>
             </section>
 

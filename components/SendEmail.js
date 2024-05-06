@@ -120,9 +120,11 @@ export default function SendEmail(props) {
         //   },
         // }}
       >
-        <IconButton className="tooltipButton">
-          <EmailIcon sx={{ color: "#eeeeee" }} />
-        </IconButton>
+        <span>
+          <IconButton className="tooltipButton">
+            <EmailIcon sx={{ color: "#eeeeee" }} />
+          </IconButton>
+        </span>
       </Tooltip>
     </>
   );
