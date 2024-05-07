@@ -220,15 +220,16 @@ export default function Home() {
                 // dates="2020-2023"
                 title="ibm.com/able"
                 titleLink="https://www.ibm.com/able/"
-                goal="This site acts as a reference for IBMers building accessible products within the company. I implemented over 90% of the front end (in 2022) with React and Node and deployed the site using docker containers to IBM Cloud.
+                goal="This site acts as a reference for IBMers building accessible products within the company. 
+                <br></br>
+                I implemented over 90% of the front end (in 2022) with React and Node and deployed the site using docker containers to IBM Cloud.
                 <br></br>
                 This work was featured in 
                 <a target='_blank' href='https://www.forbes.com/sites/stevenaquino/2020/05/19/ibm-launches-open-source-equal-access-toolkit/?sh=918fe631f776'>Forbes</a>,
                 <a target='_blank' href='https://www.infoq.com/news/2020/05/ibm-accessibility-checker/'>InfoQ</a>,
                 <a target='_blank' href='https://betanews.com/2020/05/18/ibm-equal-access-toolkit/'>betanews</a>,
-                <a target='_blank' href='https://www.linux.com/news/ibm-launches-equal-access-toolkit-to-help-developers-build-accessible-websites-and-applications/'>linux.com</a>,
-                <a target='_blank' href='https://www.zdnet.com/article/ibm-rolls-out-tools-to-help-developers-ensure-apps-are-accessible/'>ZDNET</a>,
-                 and several others."
+                <a target='_blank' href='https://www.linux.com/news/ibm-launches-equal-access-toolkit-to-help-developers-build-accessible-websites-and-applications/'>linux.com</a>, and
+                <a target='_blank' href='https://www.zdnet.com/article/ibm-rolls-out-tools-to-help-developers-ensure-apps-are-accessible/'>ZDNET</a>."
                 image="/IBMbee2.png"
                 imageAlt="logo for the website ibm.com/able"
                 technologies="React,Javascript,CSS,HTML,JSX,VSCode,Typescript,Node.js,Docker,CouchDB"
@@ -238,7 +239,9 @@ export default function Home() {
                 // dates="2020-2023"
                 title="IBM Equal Access Accessibility Checker"
                 titleLink="https://chromewebstore.google.com/detail/ibm-equal-access-accessib/lkcagbfjnkomcinoddgooolagloogehp?pli=1"
-                goal="This web extension allows users to automatically check for accessibility issues on any website. I contributed a dynamically drawn visualization that highlights accessibility bugs on a webpage.
+                goal="This web extension allows users to automatically check for accessibility issues on any website. 
+                <br></br>
+                I contributed a dynamically drawn visualization that highlights accessibility bugs on a webpage.
                 <br></br>
                 This work was featured in 
                 <a target='_blank' href='https://venturebeat.com/business/ibm-upgrades-web-accessibility-tool-for-finding-and-fixing-issues/'>VentureBeat</a>
@@ -253,7 +256,9 @@ export default function Home() {
                 id="hilton"
                 title="Robotic Concierge - IBM Watson x Hilton"
                 titleLink="http://fortune.com/2016/03/09/hilton-robot-ibm-watson/"
-                goal="I built a highly interactive robotic concierge, called “Connie.” I partnered with Hilton Hotels to showcase Connie at Hilton’s proving-ground for innovation in Washington DC. This robotic concierge, powered by Watson, was designed to help customers navigate the hotel and the surrounding area using natural language.
+                goal="This robotic concierge, called Connie, was designed to help customers navigate the hotel and the surrounding area using natural language.
+                <br></br>
+                I consulted and built Connie using Watson APIs, natural language processing, computer vision and speech to text.               
                 <br></br>
                 This work was featured in 
                 <a target='_blank' href='http://www.foxnews.com/travel/2016/03/09/hilton-ibm-pilot-first-watson-enabled-robot-concierge.html'>Fox News</a>,
@@ -261,7 +266,7 @@ export default function Home() {
                 <a target='_blank' href='http://arstechnica.com/gadgets/2016/03/ibm-watson-hilton-robot-connie/'>Ars Technica</a>,
                 <a target='_blank' href='http://fortune.com/2016/03/09/hilton-robot-ibm-watson/'>Fortune</a>,
                 <a target='_blank' href='http://www.usatoday.com/story/travel/roadwarriorvoices/2016/03/09/introducing-connie-hiltons-new-robot-concierge/81525924/'>USA Today</a>,
-                <a target='_blank' href='http://time.com/4251412/ibm-hilton-robot-hotel/'>Time</a> and several others."
+                <a target='_blank' href='http://time.com/4251412/ibm-hilton-robot-hotel/'>Time</a> and <a href='https://news.google.com/search?q=IBM%20hilton%20robot&hl=en-US&gl=US&ceid=US%3Aen' target='_blank'>several others.</a>"
                 image="/IBMNao.webp"
                 imageAlt="Some guests at Hilton chatting with the IBM Watson robot"
                 technologies="REST,Python,Vim,Unix/Linux,CouchDB,Robotics Operating System,Point Cloud Library,Open Computer Vision (OpenCV),Watson AI APIs,NAO Robot"
@@ -278,8 +283,8 @@ export default function Home() {
                 This work was featured in 
                 <a target='_blank' href='http://www.zdnet.com/article/ibms-watson-ai-could-soon-be-in-devices-from-pcs-to-robots-thanks-to-project-intu/'>ZDNET</a>,
                 <a target='_blank' href='https://thestack.com/iot/2016/11/09/ibm-extends-watson-capabilities-to-any-connected-device/'>The Stack</a>,
-                <a target='_blank' href='https://siliconangle.com/blog/2016/11/09/ibm-offers-developers-a-way-to-extend-watsons-capabilities-into-any-device/'>Silicon Angle</a>,
-                <a target='_blank' href='https://www.prnewswire.com/news-releases/ibm-launches-experimental-platform-for-embedding-watson-into-any-device-300359719.html'>PR News Wire</a>, and several others."
+                <a target='_blank' href='https://siliconangle.com/blog/2016/11/09/ibm-offers-developers-a-way-to-extend-watsons-capabilities-into-any-device/'>Silicon Angle</a>, and
+                <a target='_blank' href='https://www.prnewswire.com/news-releases/ibm-launches-experimental-platform-for-embedding-watson-into-any-device-300359719.html'>PR News Wire</a>."
                 image="/IBMIntu.jpg"
                 imageAlt="Image of Rob High doing a keynote presentation about IBM Project Intu"
                 technologies="REST,Python,CouchDB,Watson AI APIs,NAO Robot,Pepper Robot"
@@ -290,14 +295,16 @@ export default function Home() {
                 title="IBM Chef Watson Robot"
                 titleLink="https://www.theguardian.com/technology/2016/jun/04/man-v-machine-robots-artificial-intelligence-cook-write"
                 goal="
-                This application allows the robot to act as an active kitchen assistant that will explore ingredients with you and then create a dynamically generated recipe for you to cook. I collaborated with the Chef Watson team to bring Chef Watson to the NAO robotics platform.
+                This application allows the robot to act as an active kitchen assistant that will explore ingredients with you and then create a dynamically generated recipe for you to cook. 
+                <br></br>
+                I collaborated with the Chef Watson team to bring Chef Watson to the NAO robotics platform.
                 <br></br>
                 This work was featured by 
                 <a target='_blank' href='https://www.theguardian.com/technology/2016/jun/04/man-v-machine-robots-artificial-intelligence-cook-write'>The Guardian</a>,
                 <a target='_blank' href='https://www.washingtonpost.com/lifestyle/food/could-ibms-watson-eventually-replace-creative-chefs-not-at-this-rate/2015/05/11/82a0a3ca-f29f-11e4-b2f3-af5479e6bbdd_story.html'>Washington Post</a>,
                 <a target='_blank' href='https://www.newyorker.com/magazine/2016/11/28/cooking-with-chef-watson-ibms-artificial-intelligence-app'>The New Yorker</a>,
                 <a target='_blank' href='https://www.bonappetit.com/entertaining-style/trends-news/article/chef-watson-app'>bon appetit</a>,
-                 and several others."
+                 and <a href='https://news.google.com/search?q=IBM%20chef%20watson&hl=en-US&gl=US&ceid=US%3Aen' target='_blank'>several others</a>."
                 image="/IBMChef.avif"
                 imageAlt="The chef watson robot talking to a chef in a relaxed pose"
                 technologies="REST,Python,Robotics Operating System,Watson AI APIs,NAO Robot,Pepper Robot"
@@ -307,7 +314,10 @@ export default function Home() {
                 id="segbot"
                 title="Building Wide Intelligence"
                 titleLink="https://repositories.lib.utexas.edu/items/efb21691-020e-484e-b27f-0ec020710f19"
-                goal="I worked on a robotics & AI system that autonomously navigated and traversed multiple floors in a building."
+                goal="
+                An autonomous wheeled robotics platform built on the segway, which was used to test and further robotics research at UT Austin.
+                <br></br>
+                I augmented the segbot to autonomously traverse multiple floors in a building. While also implementing complex plans to dynamically perform goals as it moved around the building."
                 image="/bwi1.jpg"
                 imageAlt="The segbot robotics platform in University of Texas at Austin computer science building"
                 technologies="Python,MATLAB,Vim,Unix/Linux,Robotics Operating System,Point Cloud Library,Open Computer Vision (OpenCV),Segbot Robot"

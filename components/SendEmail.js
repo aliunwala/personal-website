@@ -28,7 +28,7 @@ export default function SendEmail(props) {
         settooltipIsOpen(false);
         setTimeout(() => {
           setTooltipTitle("Copy Email");
-        }, "100");
+        }, 100);
 
         document.body.removeEventListener("touchmove", touchHandler);
         // console.log("touchmove");
@@ -39,7 +39,15 @@ export default function SendEmail(props) {
         copyTextToClipboard(email);
         setTooltipTitle("Copied");
         settooltipIsOpen(true);
-        document.body.addEventListener("touchmove", touchHandler);
+        document.body.addEventListener("touchmove", touchHandler); // lower the tooltip if the mobile user drags the screen
+        setTimeout(() => {
+          // If mobile user does not drag the screen. Lower tooltip anyway after 1 sec
+          settooltipIsOpen(false);
+          setTimeout(() => {
+            setTooltipTitle("Copy Email");
+          }, "100");
+          document.body.removeEventListener("touchmove", touchHandler);
+        }, 1000);
       };
 
       tooltip.addEventListener("mouseover", () => {
