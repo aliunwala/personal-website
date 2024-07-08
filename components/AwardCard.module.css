@@ -1,8 +1,8 @@
-.educationCard:hover {
+.awardCard:hover {
   background: rgba(0, 0, 0, 0.3);
 }
 
-.educationCard {
+.awardCard {
   /* background-color: aquamarine; */
   /* } */
   /* .css-w88nxk { */
@@ -17,60 +17,60 @@
   /* padding: 10px; */
   /* gap: 10px; */
   /* margin: 0; */
-  /* margin-bottom: 20px; */
+  /* margin-bottom: 10px; */
   border-radius: 4px;
   font-size: 14px;
   padding: 10px;
   color: var(--dullWhite);
 }
-.educationCardContainer {
+.awardCardContainer {
   display: flex;
   /* flex-direction: column; */
   justify-content: center;
 }
-.educationCard p {
+
+/* .awardCard p {
   color: var(--dullWhite);
   font-size: 14px;
-  /* padding-left: 20px; */
-}
+} */
 
-.educationCard a:hover {
+.awardCard a:hover {
   color: var(--linkHover);
 }
 
-.educationCard svg {
+.awardCard svg {
   height: 16px;
   width: 16px;
 }
 
-.educationCardRow {
+.awardCardRow {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.educationCardTitle {
+.awardCardTitle {
   font-weight: 500;
   color: var(--brightWhite);
   font-size: 16px;
-  margin-bottom: 8px;
+  margin: 0px;
 }
 
-.educationCardLeft {
+.awardCardLeft {
   flex: 1.5 0 0;
   /* letter-spacing: 0.025em; */
 }
-.educationCardMiddle {
+.awardCardMiddle {
   flex: 0.7 0 0;
   /* letter-spacing: 0.025em; */
 }
-.educationCardRight {
-  flex: 0.6 0 0;
+.awardCardRight {
+  flex: 1 0 0;
 }
-/* .educationCardTechStack {
+/* .awardCardTechStack {
   display: flex;
   gap: 10px;
 } */
-/* .educationCardTechItem {
+/* .awardCardTechItem {
   background: var(--techBubble);
   border-radius: 16px;
   padding: 0.25rem 0.75rem;
@@ -80,11 +80,14 @@
   color: var(--techText);
 } */
 
-.educationCardBody {
-  margin-top: 0px;
+.awardCardBody {
+  /* margin-top: 0px;
   margin-left: 0px;
   margin-right: 0px;
-  margin-bottom: 8px;
+  margin-bottom: 8px; */
+  color: var(--dullWhite);
+  font-size: 14px;
+  margin: 0px;
 }
 
 /* .footer {
