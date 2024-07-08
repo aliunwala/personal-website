@@ -1,6 +1,7 @@
 import Head from "next/head";
 import JobCard from "@components/JobCard";
 import EducationCard from "@components/EducationCard";
+import AwardCard from "@components/AwardCard";
 import ProjectCard from "@components/ProjectCard";
 import * as React from "react";
 import { useEffect, useState } from "react";
@@ -39,15 +40,15 @@ export default function Home() {
                     </a>
                   </li>
                   <li>
-                    <a className="myNavA navEffect" href="#education">
-                      {/* <span className="mySpacer"></span> */}
-                      <span>Education</span>
-                    </a>
-                  </li>
-                  <li>
                     <a className="myNavA navEffect" href="#projects">
                       {/* <span className="mySpacer"></span> */}
                       <span>Projects</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a className="myNavA navEffect" href="#education">
+                      {/* <span className="mySpacer"></span> */}
+                      <span>Education & Awards</span>
                     </a>
                   </li>
                   <li>
@@ -191,28 +192,6 @@ export default function Home() {
               ></JobCard>
             </section>
 
-            <section id="education">
-              <h2 className="sectionTitle">Education</h2>
-              <EducationCard
-                school="The University of Texas at Austin"
-                degree="Master of Science"
-                degreeLevel="Graduate"
-                department="Electrical and Computer Engineering"
-                GPA="3.8"
-                graduated="2014"
-                research="Robotics and Artificial Intelligence"
-                researchLink="https://repositories.lib.utexas.edu/items/efb21691-020e-484e-b27f-0ec020710f19"
-              ></EducationCard>
-              <EducationCard
-                school="The University of Texas at Austin"
-                degree="Bachelor of Science"
-                degreeLevel="Undergraduate"
-                department="Electrical and Computer Engineering"
-                GPA="3.67"
-                graduated="2012"
-              ></EducationCard>
-            </section>
-
             <section id="projects">
               <h2 className="sectionTitle">Projects</h2>
               <ProjectCard
@@ -323,6 +302,53 @@ export default function Home() {
                 technologies="Python,MATLAB,Vim,Unix/Linux,Robotics Operating System,Point Cloud Library,Open Computer Vision (OpenCV),Segbot Robot"
               ></ProjectCard>
             </section>
+
+            <section id="education">
+              <h2 className="sectionTitle">Education</h2>
+              <EducationCard
+                school="The University of Texas at Austin"
+                degree="Master of Science"
+                degreeLevel="Graduate"
+                department="Electrical and Computer Engineering"
+                GPA="3.8"
+                graduated="2014"
+                research="Robotics and Artificial Intelligence"
+                researchLink="https://repositories.lib.utexas.edu/items/efb21691-020e-484e-b27f-0ec020710f19"
+              ></EducationCard>
+              <EducationCard
+                school="The University of Texas at Austin"
+                degree="Bachelor of Science"
+                degreeLevel="Undergraduate"
+                department="Electrical and Computer Engineering"
+                GPA="3.67"
+                graduated="2012"
+              ></EducationCard>
+              {/* <h2 className="sectionTitle">Education & Awards</h2> */}
+            </section>
+            <section id="awards">
+              <h2 className="sectionTitle" style={{ paddingTop: "20px" }}>
+                Awards
+              </h2>
+              <AwardCard
+                title="Eagle Scout"
+                subtitle="Boy Scouts of America"
+              ></AwardCard>
+              <AwardCard
+                title="1st Place, Senior Design Competition"
+                subtitle="The University of Texas at Austin"
+              ></AwardCard>
+              <AwardCard
+                title="1st place, ECE 445L Design Competition"
+                subtitle="The University of Texas at Austin"
+              ></AwardCard>
+              <AwardCard
+                title="University Honors"
+                subtitle="The University of Texas at Austin"
+              ></AwardCard>
+            </section>
+
+            {/* <section id="awards">
+            </section> */}
 
             <section id="aboutsite">
               <h2 className="sectionTitle">About the site</h2>
