@@ -1,3 +1,31 @@
+// import Home from "./home";
+// import Fetch from "./fetch";
+// // import { createBrowserRouter, Link } from "react-router-dom";
+
+// export default function Index() {
+//   // const router = createBrowserRouter([
+//   //   { path: "/", element: <Home></Home> },
+//   //   { path: "fetch", element: <Fetch></Fetch> },
+//   // ]);
+//   const router = createBrowserRouter([
+//     {
+//       path: "/",
+//       element: (
+//         <div>
+//           <h1>Hello World</h1>
+//           <Link to="about">About Us</Link>
+//         </div>
+//       ),
+//     },
+//     {
+//       path: "about",
+//       element: <div>About</div>,
+//     },
+//   ]);
+
+//   return <RouterProvider router={router} />;
+// }
+
 import Head from "next/head";
 import JobCard from "@components/JobCard";
 import EducationCard from "@components/EducationCard";
@@ -166,7 +194,7 @@ export default function Home() {
                 title="IBM Watson: Cognitive Robotics Technical Lead"
                 titleLink="https://www.ibm.com/watson"
                 description="
-                In this role, I tackled the challenge to find value for IBM at the crossroads of cognitive computing and robotics. I led a technical team to create several influential projects using Watson AI services. 
+                In this role, I tackled the challenge to find value for IBM at the crossroads of cognitive computing and robotics. I led a technical team to create several influential projects using Watson AI services.
                 <br></br>
                 See the <a href='#projects'>projects</a> section for some of the work I did during this role:  <a href='#hilton'>Robotic Concierge - IBM Watson x Hilton</a>, <a href='#intu'>IBM Project Intu</a>, and <a href='#chef'>IBM Chef Watson</a>."
                 id="IBMWatson"
@@ -199,11 +227,11 @@ export default function Home() {
                 // dates="2020-2023"
                 title="ibm.com/able"
                 titleLink="https://www.ibm.com/able/"
-                goal="This site acts as a reference for IBMers building accessible products within the company. 
+                goal="This site acts as a reference for IBMers building accessible products within the company.
                 <br></br>
                 I implemented over 90% of the front end (in 2022) with React and Node and deployed the site using docker containers to IBM Cloud.
                 <br></br>
-                This work was featured in 
+                This work was featured in
                 <a target='_blank' href='https://www.forbes.com/sites/stevenaquino/2020/05/19/ibm-launches-open-source-equal-access-toolkit/?sh=918fe631f776'>Forbes</a>,
                 <a target='_blank' href='https://www.infoq.com/news/2020/05/ibm-accessibility-checker/'>InfoQ</a>,
                 <a target='_blank' href='https://betanews.com/2020/05/18/ibm-equal-access-toolkit/'>betanews</a>,
@@ -218,11 +246,11 @@ export default function Home() {
                 // dates="2020-2023"
                 title="IBM Equal Access Accessibility Checker"
                 titleLink="https://chromewebstore.google.com/detail/ibm-equal-access-accessib/lkcagbfjnkomcinoddgooolagloogehp?pli=1"
-                goal="This web extension allows users to automatically check for accessibility issues on any website. 
+                goal="This web extension allows users to automatically check for accessibility issues on any website.
                 <br></br>
                 I contributed a dynamically drawn visualization that highlights accessibility bugs on a webpage.
                 <br></br>
-                This work was featured in 
+                This work was featured in
                 <a target='_blank' href='https://venturebeat.com/business/ibm-upgrades-web-accessibility-tool-for-finding-and-fixing-issues/'>VentureBeat</a>
                  and
                 <a target='_blank' href='https://www.csun.edu/cod/conference/sessions/2022/index.php/public/presentations/view/2348'>CSUN</a>."
@@ -237,9 +265,9 @@ export default function Home() {
                 titleLink="http://fortune.com/2016/03/09/hilton-robot-ibm-watson/"
                 goal="This robotic concierge, called Connie, was designed to help customers navigate the hotel and the surrounding area using natural language.
                 <br></br>
-                I consulted and built Connie using Watson APIs, natural language processing, computer vision and speech to text.               
+                I consulted and built Connie using Watson APIs, natural language processing, computer vision and speech to text.
                 <br></br>
-                This work was featured in 
+                This work was featured in
                 <a target='_blank' href='http://www.foxnews.com/travel/2016/03/09/hilton-ibm-pilot-first-watson-enabled-robot-concierge.html'>Fox News</a>,
                 <a target='_blank' href='http://www.theverge.com/2016/3/9/11180418/hilton-ibm-connie-robot-watson-hotel-concierge'>The Verge</a>,
                 <a target='_blank' href='http://arstechnica.com/gadgets/2016/03/ibm-watson-hilton-robot-connie/'>Ars Technica</a>,
@@ -259,7 +287,7 @@ export default function Home() {
                 <br><br>
                 I developed a reverse proxy, API, and security framework to pass connections to IBM Watson’s cloud services. This allowed any device with a CPU, microphone, or speakers to talk to Watson.
                 <br></br>
-                This work was featured in 
+                This work was featured in
                 <a target='_blank' href='http://www.zdnet.com/article/ibms-watson-ai-could-soon-be-in-devices-from-pcs-to-robots-thanks-to-project-intu/'>ZDNET</a>,
                 <a target='_blank' href='https://thestack.com/iot/2016/11/09/ibm-extends-watson-capabilities-to-any-connected-device/'>The Stack</a>,
                 <a target='_blank' href='https://siliconangle.com/blog/2016/11/09/ibm-offers-developers-a-way-to-extend-watsons-capabilities-into-any-device/'>Silicon Angle</a>, and
@@ -274,11 +302,11 @@ export default function Home() {
                 title="IBM Chef Watson Robot"
                 titleLink="https://www.theguardian.com/technology/2016/jun/04/man-v-machine-robots-artificial-intelligence-cook-write"
                 goal="
-                This application allows the robot to act as an active kitchen assistant that will explore ingredients with you and then create a dynamically generated recipe for you to cook. 
+                This application allows the robot to act as an active kitchen assistant that will explore ingredients with you and then create a dynamically generated recipe for you to cook.
                 <br></br>
                 I collaborated with the Chef Watson team to bring Chef Watson to the NAO robotics platform.
                 <br></br>
-                This work was featured by 
+                This work was featured by
                 <a target='_blank' href='https://www.theguardian.com/technology/2016/jun/04/man-v-machine-robots-artificial-intelligence-cook-write'>The Guardian</a>,
                 <a target='_blank' href='https://www.washingtonpost.com/lifestyle/food/could-ibms-watson-eventually-replace-creative-chefs-not-at-this-rate/2015/05/11/82a0a3ca-f29f-11e4-b2f3-af5479e6bbdd_story.html'>Washington Post</a>,
                 <a target='_blank' href='https://www.newyorker.com/magazine/2016/11/28/cooking-with-chef-watson-ibms-artificial-intelligence-app'>The New Yorker</a>,

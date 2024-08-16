@@ -1,0 +1,5 @@
+.fetchContainer p {
+  /* background-color: white; */
+  /* color: black; */
+  color: var(--brightWhite);
+}
