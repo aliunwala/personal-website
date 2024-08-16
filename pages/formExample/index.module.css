@@ -1,9 +1,9 @@
-.hookContainer p {
+.formContainer p {
   /* background-color: white; */
   /* color: black; */
   color: var(--brightWhite);
 }
 
-.hookContainer {
+.formContainer {
   margin: 30px 40px;
 }
