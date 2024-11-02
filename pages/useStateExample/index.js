@@ -11,38 +11,15 @@ const MyContext = createContext(null);
 export default function HookTesting() {
   // State
   const [counter, setCounter] = useState(100);
-  const [counter2, setCounter2] = useState(100);
 
   // useRef
   const counterRef = useRef(null);
   const refDomDisplay = useRef(null);
 
-  //useReducer
-  const initalObj = { leftSet: 0, rightSet: 0 };
-  const [state, dispatch] = useReducer(reducer, initalObj);
-
-  function reducer(state, action) {
-    switch (action.type) {
-      case "left":
-        return { ...state, leftSet: 1, rightSet: 0 };
-      case "right":
-        return { ...state, leftSet: 0, rightSet: 1 };
-      case "reset":
-        return { ...state, leftSet: 0, rightSet: 0 };
-      default:
-        return state;
-    }
-  }
-
   // Handlers
   function handleInc() {
     setCounter((counter) => counter + 1);
   }
-
-  // Effects
-  useEffect(() => {
-    setCounter2(counter + 100);
-  }, [counter]);
 
   useEffect(() => {
     // Example: Ref Variable example
@@ -57,15 +34,13 @@ export default function HookTesting() {
     // Note: You can only read/write to refs inside useEffect/handler functions
     console.log("refDomDisplay.current", refDomDisplay.current);
   }, [counter]);
+
   return (
     <div className={styles.hookContainer}>
-      <MyContext.Provider
-        value={{ counter: counter, dispatch: dispatch, state: state }}
-      >
-        <h1>Hook testing</h1>
+      <MyContext.Provider value={{ counter: counter }}>
+        <h1>useState Example</h1>
         <p>This page is a working example of:</p>
         <ul>
-          <li>- useReducer to transition states</li>
           <li>- useContext to pass props down several components</li>
           <li>- useRef to keep an "non-reactive" version of count </li>
           <li>- useRef to get a dom element </li>
@@ -85,9 +60,7 @@ export default function HookTesting() {
                 <div>
                   Counter1: {counter} (Set directly by a onClick handler)
                 </div>
-                <div>
-                  Counter2: {counter2} (Set by a useEffect to be 100+counter1)
-                </div>
+
                 <div>
                   {/* Component Composition to avoid context */}
                   <button onClick={handleInc}>
@@ -129,41 +102,12 @@ function PropDrillingFix2({ children }) {
 }
 
 function PropDrillingFix3({ children }) {
-  let { counter, state, dispatch } = useContext(MyContext);
-
-  function handleDispatchLeft() {
-    dispatch({ type: "left" });
-  }
-  function handleDispatchRight() {
-    dispatch({ type: "right" });
-  }
-  function handleDispatchReset() {
-    dispatch({ type: "reset" });
-  }
+  let { counter } = useContext(MyContext);
   return (
     <>
       <div style={{ paddingLeft: "20px" }}>
         {"<PropDrillingFix3>"}
         <div style={{ paddingLeft: "20px" }}>
-          <div>
-            <hr></hr>
-            <div>Dispatch:</div>
-            <hr></hr>
-            <button onClick={handleDispatchLeft}>DispatchLeft</button>
-            <button onClick={handleDispatchRight}>DispatchRight</button>
-            <button onClick={handleDispatchReset}>DispatchReset</button>
-            <br></br>
-            <br></br>
-            <div>
-              From useContext we have our dispatch function avalilable in{" "}
-              {`<PropDrillingFix3></PropDrillingFix3>`} allowing us to do
-              useReducer state dispatches in a deeply nested component
-            </div>
-            <div>
-              Using our dispatch function + onClick handlers our state is:{" "}
-              {JSON.stringify(state)}
-            </div>
-          </div>
           <br></br>
           <hr></hr>
           <div>Counter:</div>
@@ -187,6 +131,7 @@ function PropDrillingFix3({ children }) {
             In the console: refDomDisplay.current is a DOM element we connected
             to the ref
           </div>
+          <br></br>
         </div>
         {"</PropDrillingFix3>"}
       </div>
