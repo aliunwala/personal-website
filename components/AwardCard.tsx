@@ -1,6 +1,6 @@
-import styles from "./AwardCard.module.css";
+import styles from "./AwardCard.module.css"
 
-export default function AwardCard(props) {
+export default function AwardCard(props: Award) {
   return (
     <>
       <div className={styles.awardCard}>
@@ -20,5 +20,5 @@ export default function AwardCard(props) {
         </div>
       </div>
     </>
-  );
+  )
 }

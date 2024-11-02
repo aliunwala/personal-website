@@ -1,6 +1,6 @@
 import styles from "./JobCard.module.css"
 
-export default function JobCard(props) {
+export default function JobCard(props: Job) {
   return (
     <>
       <div

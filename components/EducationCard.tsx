@@ -1,6 +1,6 @@
 import styles from "./EducationCard.module.css"
 
-export default function EducationCard(props) {
+export default function EducationCard(props: Education) {
   return (
     <>
       <div className={styles.educationCard}>
