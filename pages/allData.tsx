@@ -1,4 +1,6 @@
-export const jobCardData = [
+// type titleLink= undefined|string
+
+export const jobCardData: Job[] = [
   {
     dates: "2020-2023",
     title: "IBM Design: Senior Software Engineer",
@@ -96,7 +98,8 @@ export const jobCardData = [
     technologies: "Java,C++,Assembly,C,Vim,Unix,TCL,Verilog,Perl,VHDL",
   },
 ]
-export const projectCardData = [
+
+export const projectCardData: Project[] = [
   {
     id: "ableSite",
     title: "ibm.com/able",
@@ -421,7 +424,8 @@ export const projectCardData = [
       "Python,MATLAB,Vim,Unix/Linux,Robotics Operating System,Point Cloud Library,Open Computer Vision (OpenCV),Segbot Robot",
   },
 ]
-export const educationCardData = [
+
+export const educationCardData: Education[] = [
   {
     school: "The University of Texas at Austin",
     degree: "Master of Science",
@@ -442,7 +446,8 @@ export const educationCardData = [
     graduated: "2012",
   },
 ]
-export const awardsCardData = [
+
+export const awardsCardData: Award[] = [
   {
     title: "Eagle Scout",
     subtitle: "Boy Scouts of America",
@@ -544,10 +549,20 @@ export const aboutSiteData = (
     .
   </>
 )
-export const navGenerationData = [
+
+export const navGenerationData: NavElement[] = [
   { name: "About", href: "#about" },
   { name: "Experience", href: "#experience" },
   { name: "Projects", href: "#projects" },
   { name: "Education & Awards", href: "#education" },
   { name: "About the site", href: "#aboutsite" },
 ]
+
+export const aboutMeSmallData: PersonalInfo = {
+  name: "Ali Unwala",
+  title: "Senior Software Engineer",
+  subtitle:
+    "I enjoy understanding how complex systems work and making unique user interfaces that delight users.",
+  email: "aliunwaladev@gmail.com",
+  resume: "/Resume_Ali_Unwala.pdf", // this finds the resume in the public directory
+}

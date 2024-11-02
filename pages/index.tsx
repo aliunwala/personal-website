@@ -9,6 +9,7 @@ import { useEffect, useState } from "react"
 
 import SendEmail from "../components/SendEmail"
 import DownloadFile from "../components/DownloadFile"
+import AboutMeSmall from "../components/AboutMeSmall"
 // import test from "./test"
 import Test from "./test/index"
 import {
@@ -19,29 +20,34 @@ import {
   aboutMeData,
   aboutSiteData,
   navGenerationData,
+  aboutMeSmallData,
 } from "./allData"
 export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Ali Unwala</title>
+        <title>{aboutMeSmallData.name}</title>
       </Head>
 
       <main>
+        {/* tailwindtest */}
         {/* <h1 className="text-3xl font-bold underline">Hello world!</h1> */}
+
+        {/* TS test */}
         {/* <Test></Test> */}
         <div className="content">
+          {/********************
+           * LAYOUT: LEFT COLUMN
+           *********************/}
           <div className="column1 col stickyItem">
             <div className="leftNavAndQuicklinksSpacer">
               <div>
-                <h1 className="myName">Ali Unwala</h1>
-                <p className="myTitle">Senior Software Engineer</p>
-                <p className="mySubTitle">
-                  I enjoy understanding how complex systems work and making
-                  unique user interfaces that delight users.
-                </p>
+                <AboutMeSmall {...aboutMeSmallData}></AboutMeSmall>
+                {/*******
+                 * NAV
+                 ********/}
                 <ul className="hideMeSmall myNav">
-                  {navGenerationData.map((navElement) => {
+                  {navGenerationData.map((navElement: NavElement) => {
                     return (
                       <li>
                         <a className="myNavA navEffect" href={navElement.href}>
@@ -54,13 +60,18 @@ export default function Home() {
               </div>
 
               <div className="quickLinks hideMeSmall">
-                <SendEmail></SendEmail>
-                <DownloadFile></DownloadFile>
+                <SendEmail {...aboutMeSmallData}></SendEmail>
+                <DownloadFile {...aboutMeSmallData}></DownloadFile>
               </div>
             </div>
           </div>
+          {/********************
+           * LAYOUT: RIGHT COLUMN
+           *********************/}
           <div className="column2 col">
-            {/* dates, title, description, technologies */}
+            {/************
+             * ABOUT ME
+             *************/}
             <section>
               <a id="about" className="anchorOffset"></a>
               <h2 className="sectionTitle hideMe">About</h2>
@@ -68,34 +79,42 @@ export default function Home() {
               <p className="aboutText hideMe">
                 <br></br>
                 Get in touch:
-                <SendEmail></SendEmail>
+                <SendEmail {...aboutMeSmallData}></SendEmail>
                 <br></br>
                 Get my resume:
-                <DownloadFile></DownloadFile>
+                <DownloadFile {...aboutMeSmallData}></DownloadFile>
               </p>
             </section>
-
+            {/************
+             * Experience
+             *************/}
             <section id="experience">
               <h2 className="sectionTitle">Experience</h2>
               {jobCardData.map((job) => {
                 return <JobCard {...job}></JobCard>
               })}
             </section>
-
+            {/************
+             * Projects
+             *************/}
             <section id="projects">
               <h2 className="sectionTitle">Projects</h2>
               {projectCardData.map((project) => {
                 return <ProjectCard {...project}></ProjectCard>
               })}
             </section>
-
+            {/************
+             * Education
+             *************/}
             <section id="education">
               <h2 className="sectionTitle">Education</h2>
               {educationCardData.map((education) => {
                 return <EducationCard {...education}></EducationCard>
               })}
             </section>
-
+            {/************
+             * Awards
+             *************/}
             <section id="awards">
               <h2 className="sectionTitle" style={{ paddingTop: "20px" }}>
                 Awards
@@ -104,7 +123,9 @@ export default function Home() {
                 return <AwardCard {...award}></AwardCard>
               })}
             </section>
-
+            {/************
+             * ABOUT SITE
+             *************/}
             <section id="aboutsite">
               <h2 className="sectionTitle">About the site</h2>
               <p className="myFooter">{aboutSiteData}</p>
@@ -112,8 +133,6 @@ export default function Home() {
           </div>
         </div>
       </main>
-
-      {/* <Footer /> */}
     </div>
   )
 }

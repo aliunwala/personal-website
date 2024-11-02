@@ -1,6 +1,6 @@
 import styles from "./ProjectCard.module.css"
 
-export default function ProjectCard(props) {
+export default function ProjectCard(props: Project) {
   return (
     <>
       <div
@@ -49,7 +49,6 @@ export default function ProjectCard(props) {
           <div className={[styles.projectCardLeft, "textXS"].join(" ")}>
             <img
               src={props.image}
-              fill="white"
               width="100%"
               height="auto"
               alt={props.imageAlt}
