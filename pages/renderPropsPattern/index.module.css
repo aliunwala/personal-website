@@ -1,0 +1,9 @@
+.myContainer p {
+  /* background-color: white; */
+  /* color: black; */
+  color: var(--brightWhite);
+}
+
+.myContainer {
+  margin: 30px 40px;
+}

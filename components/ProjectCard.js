@@ -1,4 +1,4 @@
-import styles from "./ProjectCard.module.css";
+import styles from "./ProjectCard.module.css"
 
 export default function ProjectCard(props) {
   return (
@@ -14,9 +14,11 @@ export default function ProjectCard(props) {
               href={props.titleLink}
               target="_blank"
               rel="noopener noreferrer"
-              className={[styles.projectCardLink, styles.projectCardTitle].join(
-                " "
-              )}
+              className={[
+                styles.projectCardLink,
+                styles.projectCardTitle,
+                styles.projectCardRow,
+              ].join(" ")}
             >
               <span>{props.title}</span>
               {/* <span style={{ display: "flex", alignItems: "center" }}> */}
@@ -56,10 +58,7 @@ export default function ProjectCard(props) {
           </div>
           <div className={styles.projectCardRight}>
             {/* Body text of card */}
-            <p
-              className={styles.projectCardBody}
-              dangerouslySetInnerHTML={{ __html: props.goal }}
-            ></p>
+            <p className={styles.projectCardBody}>{props.goal}</p>
 
             {/* Adding relavant tech stack bubbles */}
             {props.technologies !== undefined && props.technologies !== "" ? (
@@ -72,7 +71,7 @@ export default function ProjectCard(props) {
                     >
                       {element}
                     </div>
-                  );
+                  )
                 })}
               </div>
             ) : (
@@ -83,5 +82,5 @@ export default function ProjectCard(props) {
       </div>
       {/* </a> */}
     </>
-  );
+  )
 }

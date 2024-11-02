@@ -45,7 +45,7 @@
 
 .educationCardRow {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
 }
 .educationCardTitle {
@@ -84,7 +84,7 @@
   margin-top: 0px;
   margin-left: 0px;
   margin-right: 0px;
-  margin-bottom: 8px;
+  /* margin-bottom: 8px; */
 }
 
 /* .footer {
