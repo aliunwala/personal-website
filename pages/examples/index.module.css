@@ -7,3 +7,15 @@
 .examplesContainer {
   margin: 30px 40px;
 }
+
+.examplesBodyText {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-top: 0px;
+}
+
+.examplesBodyTitle {
+  font-weight: 500;
+  color: var(--brightWhite);
+  margin-bottom: 10px;
+}

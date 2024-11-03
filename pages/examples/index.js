@@ -49,15 +49,18 @@ export default function Examples() {
 
 function LinkCard({ href, hrefText, children }) {
   return (
-    <div className="linkCard">
-      <p>{children}</p>
-      <Link href={href}>{hrefText}</Link>
+    <div className="linkCard mt-4 mb-4">
+      <Link href={href} className={styles.examplesBodyTitle}>
+        {children}
+      </Link>
+      <br></br>
       <Link
+        className={styles.examplesBodyText}
         href={`https://github.com/aliunwala/personal-website/tree/main/pages/${href.slice(
           1
         )}/index.js`}
       >
-        github link
+        Github source code
       </Link>
     </div>
   )

@@ -1,35 +1,35 @@
-import { useState, useRef, useEffect } from "react";
-import styles from "./index.module.css";
+import { useState, useRef, useEffect } from "react"
+import styles from "./index.module.css"
 export default function FetchTesting() {
-  const [users, setUsers] = useState([]);
-  const [createUserRes, setCreateUserRes] = useState({});
-  const [createUserResp, setCreateUserResp] = useState({});
-  const nameRef = useRef("");
-  const jobRef = useRef("");
+  const [users, setUsers] = useState([])
+  const [createUserRes, setCreateUserRes] = useState({})
+  const [createUserResp, setCreateUserResp] = useState({})
+  const nameRef = useRef("")
+  const jobRef = useRef("")
 
   // Setting input fields on first mount
   useEffect(() => {
-    nameRef.current.value = "Ali";
-    jobRef.current.value = "Engineer";
-  }, []);
+    nameRef.current.value = "Ali"
+    jobRef.current.value = "Engineer"
+  }, [])
 
   // Making GET to get all users
   function handleGetUsers() {
     async function fetchWrapper() {
       try {
-        let res = await fetch("https://reqres.in/api/users");
+        let res = await fetch("https://reqres.in/api/users")
         if (!res.ok) {
-          throw new Error(`Bad request error code: ${res.status}`);
+          throw new Error(`Bad request error code: ${res.status}`)
         }
-        res = await res.json();
-        console.log("handleGetUsers", res);
-        setUsers(res.data);
+        res = await res.json()
+        console.log("handleGetUsers", res)
+        setUsers(res.data)
       } catch (e) {
-        console.log("Failed to fetch:" + e);
+        console.log("Failed to fetch:" + e)
         // throw new Error("Failed to fetch:" + e);
       }
     }
-    fetchWrapper();
+    fetchWrapper()
   }
 
   // Making POST to create a user
@@ -39,29 +39,35 @@ export default function FetchTesting() {
     // The handler function cannot be async.
     // So we have a helper function to allow us to make async calls
     async function helper() {
-      e.preventDefault(); // Stop the form from refreshing the page
+      e.preventDefault() // Stop the form from refreshing the page
       try {
         let res = await fetch("https://reqres.in/api/users", {
           method: "POST",
           body: JSON.stringify(body),
           headers: { "Content-Type": "application/json" },
-        });
+        })
         if (!res.ok) {
-          console.log(`Bad status code: ${res.status}`);
-          return;
+          console.log(`Bad status code: ${res.status}`)
+          return
         }
-        res = await res.json();
-        console.log("handleCreate succeded with reponse: ", res);
-        setCreateUserResp(res);
+        res = await res.json()
+        console.log("handleCreate succeded with reponse: ", res)
+        setCreateUserResp(res)
       } catch (error) {
-        console.log("failed to create a user");
+        console.log("failed to create a user")
       }
     }
-    helper();
+    helper()
   }
 
   return (
     <div className={styles.fetchContainer}>
+      {/* <div>
+        Github link:{" "}
+        {`https://github.com/aliunwala/personal-website/tree/main/pages/${document.URL.split(
+          "/"
+        ).pop()}/index.js`}
+      </div> */}
       <p>
         We use an simple endpoint to make fetch calls to: https://reqres.in/api{" "}
       </p>
@@ -78,7 +84,7 @@ export default function FetchTesting() {
         <br></br>
         <h3>{users.length > 0 ? "Users:" : ""}</h3>
         {users.map((user, i) => {
-          return <div key={i}>{user.first_name}</div>;
+          return <div key={i}>{user.first_name}</div>
         })}
       </div>
       <br></br>
@@ -93,9 +99,9 @@ export default function FetchTesting() {
             const body = {
               name: nameRef.current.value,
               job: jobRef.current.value,
-            };
+            }
 
-            handleCreate(e, body); //  Can pass any additional arguments this way (like we did with the body)
+            handleCreate(e, body) //  Can pass any additional arguments this way (like we did with the body)
           }}
         >
           <label for="fname">First Name:</label>
@@ -128,5 +134,5 @@ export default function FetchTesting() {
         </div>
       </div>
     </div>
-  );
+  )
 }
