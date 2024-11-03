@@ -21,7 +21,7 @@ import {
   aboutSiteData,
   navGenerationData,
   aboutMeSmallData,
-} from "./allData"
+} from "../lib/allData"
 export default function Home() {
   return (
     <div className="container">

@@ -1,3 +1,9 @@
+function useGeolocation() {
+  return <div></div>
+}
+
+export default useGeolocation
+
 // import { useState } from "react"
 // export function useGeolocation() {
 //   const [error, setError] = useState(null)
