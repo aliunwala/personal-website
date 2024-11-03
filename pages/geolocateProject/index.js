@@ -1,3 +1,8 @@
+function index() {
+  return <div></div>
+}
+
+export default index
 // import styles from "./index.module.css"
 // import { useState } from "react"
 
