@@ -7,3 +7,7 @@
 .fetchContainer {
   margin: 30px 40px;
 }
+
+.fetchContainer input {
+  color: black;
+}
