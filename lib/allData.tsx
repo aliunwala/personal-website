@@ -4,7 +4,7 @@ export const jobCardData: Job[] = [
   {
     dates: "2023-2024",
     title: "Stealth Startup (Health): Senior Full Stack Software Engineer",
-    titleLink: "",
+    titleLink: null,
     description: (
       <>
         Created the product website with authentication and user management for
