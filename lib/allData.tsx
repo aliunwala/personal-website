@@ -2,8 +2,23 @@
 
 export const jobCardData: Job[] = [
   {
+    dates: "2023-2024",
+    title: "Stealth Startup (Health): Senior Full Stack Software Engineer",
+    titleLink: "",
+    description: (
+      <>
+        Created the product website with authentication and user management for
+        customers to book and schedule appointments.
+        <br></br>
+        <br></br>
+      </>
+    ),
+    id: "StartupHealth",
+    technologies: "React, CSS, HTML, VSCode, Typescript, Node.js, Docker",
+  },
+  {
     dates: "2020-2023",
-    title: "IBM Design: Senior Software Engineer",
+    title: "IBM Design: Senior Full Stack Software Engineer",
     titleLink: "https://www.ibm.com/design/",
     description: (
       <>
@@ -24,7 +39,7 @@ export const jobCardData: Job[] = [
   },
   {
     dates: "2018-2020",
-    title: "IBM Research: Senior Software Engineer",
+    title: "IBM Research: Senior Full Stack Software Engineer",
     titleLink: "https://research.ibm.com/",
     description: (
       <>
@@ -97,7 +112,7 @@ export const jobCardData: Job[] = [
     id: "IntelIntern",
     technologies: "Java,C++,Assembly,C,Vim,Unix,TCL,Verilog,Perl,VHDL",
   },
-]
+];
 
 export const projectCardData: Project[] = [
   {
@@ -423,7 +438,7 @@ export const projectCardData: Project[] = [
     technologies:
       "Python,MATLAB,Vim,Unix/Linux,Robotics Operating System,Point Cloud Library,Open Computer Vision (OpenCV),Segbot Robot",
   },
-]
+];
 
 export const educationCardData: Education[] = [
   {
@@ -445,7 +460,7 @@ export const educationCardData: Education[] = [
     GPA: "3.67",
     graduated: "2012",
   },
-]
+];
 
 export const awardsCardData: Award[] = [
   {
@@ -464,7 +479,7 @@ export const awardsCardData: Award[] = [
     title: "University Honors",
     subtitle: "The University of Texas at Austin",
   },
-]
+];
 export const aboutMeData = (
   <>
     <p className="aboutText">
@@ -510,7 +525,7 @@ export const aboutMeData = (
       </a>
     </p>
   </>
-)
+);
 export const aboutSiteData = (
   <>
     <a target="_blank" href="https://github.com/aliunwala/personal-website">
@@ -548,7 +563,7 @@ export const aboutSiteData = (
     </a>
     .
   </>
-)
+);
 
 export const navGenerationData: NavElement[] = [
   { name: "About", href: "#about" },
@@ -556,7 +571,7 @@ export const navGenerationData: NavElement[] = [
   { name: "Projects", href: "#projects" },
   { name: "Education & Awards", href: "#education" },
   { name: "About the site", href: "#aboutsite" },
-]
+];
 
 export const aboutMeSmallData: PersonalInfo = {
   name: "Ali Unwala",
@@ -565,4 +580,4 @@ export const aboutMeSmallData: PersonalInfo = {
     "I enjoy understanding how complex systems work and making unique user interfaces that delight users.",
   email: "aliunwaladev@gmail.com",
   resume: "/Resume_Ali_Unwala.pdf", // this finds the resume in the public directory
-}
+};

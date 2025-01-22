@@ -1,4 +1,4 @@
-import styles from "./JobCard.module.css"
+import styles from "./JobCard.module.css";
 
 export default function JobCard(props: Job) {
   return (
@@ -70,7 +70,7 @@ export default function JobCard(props: Job) {
                   <div key={props.id + i} className={styles.jobCardTechItem}>
                     {element}
                   </div>
-                )
+                );
               })}
             </div>
           ) : (
@@ -80,5 +80,5 @@ export default function JobCard(props: Job) {
       </div>
       {/* </a> */}
     </>
-  )
+  );
 }
