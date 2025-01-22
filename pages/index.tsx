@@ -1,17 +1,17 @@
-import Head from "next/head"
+import Head from "next/head";
 
-import JobCard from "../components/JobCard"
-import EducationCard from "../components/EducationCard"
-import AwardCard from "../components/AwardCard"
-import ProjectCard from "../components/ProjectCard"
-import * as React from "react"
-import { useEffect, useState } from "react"
+import JobCard from "../components/JobCard";
+import EducationCard from "../components/EducationCard";
+import AwardCard from "../components/AwardCard";
+import ProjectCard from "../components/ProjectCard";
+import * as React from "react";
+import { useEffect, useState } from "react";
 
-import SendEmail from "../components/SendEmail"
-import DownloadFile from "../components/DownloadFile"
-import AboutMeSmall from "../components/AboutMeSmall"
+import SendEmail from "../components/SendEmail";
+import DownloadFile from "../components/DownloadFile";
+import AboutMeSmall from "../components/AboutMeSmall";
 // import test from "./test"
-import Test from "./test/index"
+import Test from "./test/index";
 import {
   jobCardData,
   educationCardData,
@@ -21,7 +21,7 @@ import {
   aboutSiteData,
   navGenerationData,
   aboutMeSmallData,
-} from "../lib/allData"
+} from "../lib/allData";
 export default function Home() {
   return (
     <div className="container">
@@ -54,7 +54,7 @@ export default function Home() {
                           <span>{navElement.name}</span>
                         </a>
                       </li>
-                    )
+                    );
                   })}
                 </ul>
               </div>
@@ -91,7 +91,7 @@ export default function Home() {
             <section id="experience">
               <h2 className="sectionTitle">Experience</h2>
               {jobCardData.map((job) => {
-                return <JobCard {...job}></JobCard>
+                return <JobCard {...job}></JobCard>;
               })}
             </section>
             {/************
@@ -100,7 +100,7 @@ export default function Home() {
             <section id="projects">
               <h2 className="sectionTitle">Projects</h2>
               {projectCardData.map((project) => {
-                return <ProjectCard {...project}></ProjectCard>
+                return <ProjectCard {...project}></ProjectCard>;
               })}
             </section>
             {/************
@@ -109,7 +109,7 @@ export default function Home() {
             <section id="education">
               <h2 className="sectionTitle">Education</h2>
               {educationCardData.map((education) => {
-                return <EducationCard {...education}></EducationCard>
+                return <EducationCard {...education}></EducationCard>;
               })}
             </section>
             {/************
@@ -120,7 +120,7 @@ export default function Home() {
                 Awards
               </h2>
               {awardsCardData.map((award) => {
-                return <AwardCard {...award}></AwardCard>
+                return <AwardCard {...award}></AwardCard>;
               })}
             </section>
             {/************
@@ -134,5 +134,5 @@ export default function Home() {
         </div>
       </main>
     </div>
-  )
+  );
 }

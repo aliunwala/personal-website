@@ -1,20 +1,22 @@
 // type titleLink= undefined|string
 
-export const jobCardData: Job[] = [
+export const jobCardData: JobCardProps[] = [
   {
     dates: "2023-2024",
-    title: "Stealth Startup (Health): Senior Full Stack Software Engineer",
+    title: "Health Startup: Senior Full Stack Software Engineer",
     titleLink: null,
     description: (
       <>
-        Created the product website with authentication and user management for
-        customers to book and schedule appointments.
+        Conducted user studies to architect and implement a website with
+        authentication and user management for customers to book and schedule
+        appointments.
         <br></br>
         <br></br>
       </>
     ),
-    id: "StartupHealth",
-    technologies: "React, CSS, HTML, VSCode, Typescript, Node.js, Docker",
+    id: "HealthStartup",
+    technologies:
+      "React, CSS, HTML, VSCode, Typescript, Node.js, Docker, React Hook Form, Zod, js-cookie, axios",
   },
   {
     dates: "2020-2023",
