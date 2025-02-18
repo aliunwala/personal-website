@@ -59,9 +59,30 @@ export default function Home() {
                 </ul>
               </div>
 
-              <div className="quickLinks hideMeSmall">
+              <div
+                className="quickLinks hideMeSmall"
+                style={{ marginTop: "16px" }}
+              >
                 <SendEmail {...aboutMeSmallData}></SendEmail>
                 <DownloadFile {...aboutMeSmallData}></DownloadFile>
+                <a href="https://www.linkedin.com/in/aliunwala/">
+                  <img
+                    src="/LinkedIn_icon.png"
+                    alt="Link to my linkedin page"
+                    style={{ height: "24px", width: "24px", marginLeft: "8px" }}
+                  ></img>
+                </a>
+                <a href="https://github.com/aliunwala">
+                  <img
+                    src="/github-mark-white.png"
+                    alt="Link to my github page"
+                    style={{
+                      height: "24px",
+                      width: "24px",
+                      marginLeft: "16px",
+                    }}
+                  ></img>
+                </a>
               </div>
             </div>
           </div>
@@ -76,14 +97,41 @@ export default function Home() {
               <a id="about" className="anchorOffset"></a>
               <h2 className="sectionTitle hideMe">About</h2>
               {aboutMeData}
-              <p className="aboutText hideMe">
-                <br></br>
-                Get in touch:
-                <SendEmail {...aboutMeSmallData}></SendEmail>
-                <br></br>
-                Get my resume:
-                <DownloadFile {...aboutMeSmallData}></DownloadFile>
-              </p>
+              <br></br>
+              <div className="aboutText hideMe">
+                <div style={{ display: "flex", alignItems: "center" }}>
+                  <p>Get my resume:</p>
+                  <DownloadFile {...aboutMeSmallData}></DownloadFile>
+                </div>
+                <div style={{ display: "flex", alignItems: "center" }}>
+                  <p style={{ marginRight: "12px" }}>Get in touch:</p>
+                  <div className="quickLinks">
+                    <SendEmail {...aboutMeSmallData}></SendEmail>
+                    <a href="https://www.linkedin.com/in/aliunwala/">
+                      <img
+                        src="/LinkedIn_icon.png"
+                        alt="Link to my linkedin page"
+                        style={{
+                          height: "24px",
+                          width: "24px",
+                          marginLeft: "8px",
+                        }}
+                      ></img>
+                    </a>
+                    <a href="https://github.com/aliunwala">
+                      <img
+                        src="/github-mark-white.png"
+                        alt="Link to my github page"
+                        style={{
+                          height: "24px",
+                          width: "24px",
+                          marginLeft: "16px",
+                        }}
+                      ></img>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </section>
             {/************
              * Experience
