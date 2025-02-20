@@ -74,6 +74,7 @@ body {
   margin-left: -8px;
 }
 
+
 @media (min-width: 1024px) {
   .content {
     /* flex: 1; */
