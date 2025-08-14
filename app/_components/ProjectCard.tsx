@@ -1,5 +1,5 @@
 import styles from "./ProjectCard.module.css";
-
+import { Project } from "@/lib/interfaces";
 export default function ProjectCard(props: Project) {
   return (
     <>

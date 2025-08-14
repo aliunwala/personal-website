@@ -1,5 +1,12 @@
 // type titleLink= undefined|string
-
+import {
+  JobCardProps,
+  Project,
+  Education,
+  Award,
+  NavElement,
+  PersonalInfo,
+} from "./interfaces";
 export const jobCardData: JobCardProps[] = [
   {
     dates: "2023-2024",

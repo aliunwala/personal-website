@@ -22,6 +22,7 @@ import {
   navGenerationData,
   aboutMeSmallData,
 } from "../lib/allData";
+import { NavElement } from "@/lib/interfaces";
 export default function Home() {
   return (
     <div className="container">

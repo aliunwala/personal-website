@@ -1,3 +1,4 @@
+import { PersonalInfo } from "@/lib/interfaces";
 function AboutMeSmall({ name, title, subtitle }: PersonalInfo) {
   return (
     <>
@@ -5,7 +6,7 @@ function AboutMeSmall({ name, title, subtitle }: PersonalInfo) {
       <p className="myTitle">{title}</p>
       <p className="mySubTitle">{subtitle}</p>
     </>
-  )
+  );
 }
 
-export default AboutMeSmall
+export default AboutMeSmall;

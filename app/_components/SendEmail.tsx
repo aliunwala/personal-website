@@ -10,7 +10,7 @@ import Stack from "@mui/material/Stack";
 import AlarmIcon from "@mui/icons-material/Alarm";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import EmailIcon from "@mui/icons-material/Email";
-
+import { PersonalInfo } from "@/lib/interfaces";
 export default function SendEmail({ email }: PersonalInfo) {
   // Nice compact example of useState/useEffect/useRef
   // https://stackoverflow.com/questions/58831750/how-to-add-event-in-react-functional-component

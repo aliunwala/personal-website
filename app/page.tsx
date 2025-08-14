@@ -21,6 +21,7 @@ import {
   navGenerationData,
   aboutMeSmallData,
 } from "../lib/allData";
+import { NavElement } from "@/lib/interfaces";
 export default function Home() {
   return (
     <div className="container">
@@ -48,7 +49,7 @@ export default function Home() {
                 <ul className="hideMeSmall myNav">
                   {navGenerationData.map((navElement: NavElement) => {
                     return (
-                      <li>
+                      <li key={navElement.name}>
                         <a className="myNavA navEffect" href={navElement.href}>
                           <span>{navElement.name}</span>
                         </a>
@@ -138,7 +139,12 @@ export default function Home() {
             <section id="experience">
               <h2 className="sectionTitle">Experience</h2>
               {jobCardData.map((job) => {
-                return <JobCard {...job}></JobCard>;
+                return (
+                  <JobCard
+                    key={job.title.trim().replaceAll(" ", "")}
+                    {...job}
+                  ></JobCard>
+                );
               })}
             </section>
             {/************
@@ -147,7 +153,12 @@ export default function Home() {
             <section id="projects">
               <h2 className="sectionTitle">Projects</h2>
               {projectCardData.map((project) => {
-                return <ProjectCard {...project}></ProjectCard>;
+                return (
+                  <ProjectCard
+                    key={project.id.trim().replaceAll(" ", "")}
+                    {...project}
+                  ></ProjectCard>
+                );
               })}
             </section>
             {/************
@@ -156,7 +167,12 @@ export default function Home() {
             <section id="education">
               <h2 className="sectionTitle">Education</h2>
               {educationCardData.map((education) => {
-                return <EducationCard {...education}></EducationCard>;
+                return (
+                  <EducationCard
+                    key={education.school.trim().replaceAll(" ", "")}
+                    {...education}
+                  ></EducationCard>
+                );
               })}
             </section>
             {/************
@@ -167,7 +183,12 @@ export default function Home() {
                 Awards
               </h2>
               {awardsCardData.map((award) => {
-                return <AwardCard {...award}></AwardCard>;
+                return (
+                  <AwardCard
+                    key={award.title.trim().replaceAll(" ", "")}
+                    {...award}
+                  ></AwardCard>
+                );
               })}
             </section>
             {/************

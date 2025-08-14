@@ -1,5 +1,5 @@
-import styles from "./EducationCard.module.css"
-
+import styles from "./EducationCard.module.css";
+import { Education } from "@/lib/interfaces";
 export default function EducationCard(props: Education) {
   return (
     <>
@@ -65,5 +65,5 @@ export default function EducationCard(props: Education) {
         )}
       </div>
     </>
-  )
+  );
 }

@@ -1,4 +1,6 @@
-interface JobCardProps {
+import { JSX } from "react";
+
+export interface JobCardProps {
   dates: string;
   title: string;
   titleLink?: string;
@@ -7,7 +9,7 @@ interface JobCardProps {
   technologies: string;
 }
 
-interface Project {
+export interface Project {
   id: string;
   title: string;
   titleLink: string;
@@ -17,7 +19,7 @@ interface Project {
   technologies: string;
 }
 
-interface Education {
+export interface Education {
   school: string;
   degree: string;
   degreeLevel: string;
@@ -27,15 +29,15 @@ interface Education {
   research?: string;
   researchLink?: string;
 }
-interface Award {
+export interface Award {
   title: string;
   subtitle: string;
 }
-interface NavElement {
+export interface NavElement {
   name: string;
   href: string;
 }
-interface PersonalInfo {
+export interface PersonalInfo {
   name: string;
   title: string;
   subtitle: string;
