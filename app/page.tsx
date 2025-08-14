@@ -1,17 +1,16 @@
 import Head from "next/head";
 
-import JobCard from "../components/JobCard";
-import EducationCard from "../components/EducationCard";
-import AwardCard from "../components/AwardCard";
-import ProjectCard from "../components/ProjectCard";
+import JobCard from "./_components/JobCard";
+import EducationCard from "./_components/EducationCard";
+import AwardCard from "./_components/AwardCard";
+import ProjectCard from "./_components/ProjectCard";
 import * as React from "react";
 import { useEffect, useState } from "react";
 
-import SendEmail from "../components/SendEmail";
-import DownloadFile from "../components/DownloadFile";
-import AboutMeSmall from "../components/AboutMeSmall";
+import SendEmail from "./_components/SendEmail";
+import DownloadFile from "./_components/DownloadFile";
+import AboutMeSmall from "./_components/AboutMeSmall";
 // import test from "./test"
-import Test from "./test/index";
 import {
   jobCardData,
   educationCardData,

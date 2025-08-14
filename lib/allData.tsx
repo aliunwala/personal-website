@@ -573,6 +573,7 @@ export const navGenerationData: NavElement[] = [
   { name: "Projects", href: "#projects" },
   { name: "Education & Awards", href: "#education" },
   { name: "About the site", href: "#aboutsite" },
+  { name: "Blog", href: "/blog" },
 ];
 
 export const aboutMeSmallData: PersonalInfo = {
