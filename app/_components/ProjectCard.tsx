@@ -1,4 +1,4 @@
-import styles from "./ProjectCard.module.css"
+import styles from "./ProjectCard.module.css";
 
 export default function ProjectCard(props: Project) {
   return (
@@ -70,7 +70,7 @@ export default function ProjectCard(props: Project) {
                     >
                       {element}
                     </div>
-                  )
+                  );
                 })}
               </div>
             ) : (
@@ -81,5 +81,5 @@ export default function ProjectCard(props: Project) {
       </div>
       {/* </a> */}
     </>
-  )
+  );
 }

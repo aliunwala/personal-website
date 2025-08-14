@@ -16,15 +16,15 @@ export default function SendEmail({ email }: PersonalInfo) {
   // https://stackoverflow.com/questions/58831750/how-to-add-event-in-react-functional-component
   const [tooltipTitle, setTooltipTitle] = useState("Copy Email");
   const [tooltipIsOpen, settooltipIsOpen] = useState(false);
-  const innerRef = useRef(null);
+  const innerRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
     // let tooltip = document.querySelector(".tooltip");
     // let tooltip = document.getElementById("");
-    const tooltip = innerRef.current;
 
+    const tooltip = innerRef.current;
     if (tooltip !== undefined && tooltip !== null) {
-      let touchHandler = function () {
+      const touchHandler = function () {
         //Call this handler once and remove it
         settooltipIsOpen(false);
         setTimeout(() => {
@@ -35,7 +35,7 @@ export default function SendEmail({ email }: PersonalInfo) {
         // console.log("touchmove");
       };
 
-      let clickHandler = function (event) {
+      const clickHandler = function (event: Event) {
         console.log("touchmove132121");
         copyTextToClipboard(email);
         setTooltipTitle("Copied");
@@ -55,7 +55,7 @@ export default function SendEmail({ email }: PersonalInfo) {
         settooltipIsOpen(true);
       });
       tooltip.addEventListener("click", clickHandler);
-      tooltip.addEventListener("mouseleave", function (event) {
+      tooltip.addEventListener("mouseleave", function (event: Event) {
         settooltipIsOpen(false);
         setTimeout(() => {
           setTooltipTitle("Copy Email");
@@ -63,8 +63,8 @@ export default function SendEmail({ email }: PersonalInfo) {
       });
     }
     // https://stackoverflow.com/questions/400212/how-do-i-copy-to-the-clipboard-in-javascript
-    let fallbackCopyTextToClipboard = function (text) {
-      let textArea = document.createElement("textarea");
+    const fallbackCopyTextToClipboard = function (text: any) {
+      const textArea = document.createElement("textarea");
       textArea.value = text;
 
       // Avoid scrolling to bottom
@@ -77,8 +77,8 @@ export default function SendEmail({ email }: PersonalInfo) {
       textArea.select();
 
       try {
-        let successful = document.execCommand("copy");
-        let msg = successful ? "successful" : "unsuccessful";
+        const successful = document.execCommand("copy");
+        const msg = successful ? "successful" : "unsuccessful";
         console.log("Fallback: Copying text command was " + msg);
       } catch (err) {
         console.error("Fallback: Oops, unable to copy", err);
@@ -87,7 +87,7 @@ export default function SendEmail({ email }: PersonalInfo) {
       document.body.removeChild(textArea);
     };
 
-    let copyTextToClipboard = function (text) {
+    const copyTextToClipboard = function (text: any) {
       if (!navigator.clipboard) {
         fallbackCopyTextToClipboard(text);
         return;

@@ -61,7 +61,7 @@ const Switch = () => {
     () =>
       ((typeof localStorage !== "undefined" &&
         localStorage.getItem(STORAGE_KEY)) ??
-        "system") as ColorSchemePreference,
+        "system") as ColorSchemePreference
   );
 
   useEffect(() => {
@@ -99,6 +99,7 @@ const Script = memo(() => (
     }}
   />
 ));
+Script.displayName = "Script";
 
 /**
  * This component wich applies classes and transitions.
