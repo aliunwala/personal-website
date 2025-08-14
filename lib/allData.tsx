@@ -4,7 +4,7 @@ export const jobCardData: JobCardProps[] = [
   {
     dates: "2023-2024",
     title: "Health Startup: Senior Full Stack Software Engineer",
-    titleLink: null,
+    titleLink: undefined,
     description: (
       <>
         Conducted user studies to architect and implement a website with
