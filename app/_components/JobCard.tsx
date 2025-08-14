@@ -1,5 +1,5 @@
 import styles from "./JobCard.module.css";
-import { JobCardProps } from "@/lib/interfaces";
+import { JobCardProps } from "@/interfaces/interfaces";
 interface TitleWithLinkProps {
   title: string;
   titleLink: string;

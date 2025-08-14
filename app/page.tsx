@@ -21,7 +21,7 @@ import {
   navGenerationData,
   aboutMeSmallData,
 } from "../lib/allData";
-import { NavElement } from "@/lib/interfaces";
+import { NavElement } from "@/interfaces/interfaces";
 export default function Home() {
   return (
     <div className="container">
@@ -166,10 +166,12 @@ export default function Home() {
              *************/}
             <section id="education">
               <h2 className="sectionTitle">Education</h2>
-              {educationCardData.map((education) => {
+              {educationCardData.map((education, idx) => {
                 return (
                   <EducationCard
-                    key={education.school.trim().replaceAll(" ", "")}
+                    key={
+                      education.school.trim().replaceAll(" ", "") + "year" + idx
+                    }
                     {...education}
                   ></EducationCard>
                 );

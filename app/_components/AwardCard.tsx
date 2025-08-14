@@ -1,5 +1,5 @@
 import styles from "./AwardCard.module.css";
-import { Award } from "@/lib/interfaces";
+import { Award } from "@/interfaces/interfaces";
 
 export default function AwardCard(props: Award) {
   return (

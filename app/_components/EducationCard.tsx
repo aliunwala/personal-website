@@ -1,5 +1,5 @@
 import styles from "./EducationCard.module.css";
-import { Education } from "@/lib/interfaces";
+import { Education } from "@/interfaces/interfaces";
 export default function EducationCard(props: Education) {
   return (
     <>

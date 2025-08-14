@@ -6,7 +6,7 @@ import {
   Award,
   NavElement,
   PersonalInfo,
-} from "./interfaces";
+} from "../interfaces/interfaces";
 export const jobCardData: JobCardProps[] = [
   {
     dates: "2023-2024",

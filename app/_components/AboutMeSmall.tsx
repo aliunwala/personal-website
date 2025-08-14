@@ -1,4 +1,4 @@
-import { PersonalInfo } from "@/lib/interfaces";
+import { PersonalInfo } from "@/interfaces/interfaces";
 function AboutMeSmall({ name, title, subtitle }: PersonalInfo) {
   return (
     <>

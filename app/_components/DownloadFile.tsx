@@ -9,7 +9,7 @@ import AlarmIcon from "@mui/icons-material/Alarm";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import EmailIcon from "@mui/icons-material/Email";
 import DownloadIcon from "@mui/icons-material/Download";
-import { PersonalInfo } from "@/lib/interfaces";
+import { PersonalInfo } from "@/interfaces/interfaces";
 
 export default function DownloadFile({ resume }: PersonalInfo) {
   return (
