@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./EducationCard.module.css";
 import { Education } from "@/interfaces/interfaces";
 export default function EducationCard(props: Education) {
@@ -34,8 +35,8 @@ export default function EducationCard(props: Education) {
         </div>
         {props.research !== undefined ? (
           <div>
-            <a
-              href={props.researchLink}
+            <Link
+              href={props.researchLink ?? ""}
               target="_blank"
               rel="noopener noreferrer"
               className={styles.educationCardRow}
@@ -58,7 +59,7 @@ export default function EducationCard(props: Education) {
                   clipRule="evenodd"
                 />
               </svg>
-            </a>
+            </Link>
           </div>
         ) : (
           <></>

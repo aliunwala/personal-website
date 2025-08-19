@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./JobCard.module.css";
 import { JobCardProps } from "@/interfaces/interfaces";
 interface TitleWithLinkProps {
@@ -12,7 +13,7 @@ function TitleWithLink({ title, titleLink }: TitleWithLinkProps) {
   );
 
   const hasLink = (
-    <a
+    <Link
       href={titleLink}
       target="_blank"
       rel="noopener noreferrer"
@@ -40,7 +41,7 @@ function TitleWithLink({ title, titleLink }: TitleWithLinkProps) {
           />
         </svg>
       </span>
-    </a>
+    </Link>
   );
 
   if (titleLink) {

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./ProjectCard.module.css";
 import { Project } from "@/interfaces/interfaces";
 export default function ProjectCard(props: Project) {
@@ -10,7 +11,7 @@ export default function ProjectCard(props: Project) {
         {/* Setting up title of card with a link if it exists */}
         {props.titleLink !== undefined ? (
           <div className={styles.projectCardRow}>
-            <a
+            <Link
               href={props.titleLink}
               target="_blank"
               rel="noopener noreferrer"
@@ -38,7 +39,7 @@ export default function ProjectCard(props: Project) {
                 />
               </svg>
               {/* </span> */}
-            </a>
+            </Link>
           </div>
         ) : (
           <span className={styles.projectCardTitle}>{props.title}</span>

@@ -22,6 +22,7 @@ import {
   aboutMeSmallData,
 } from "../lib/allData";
 import { NavElement } from "@/interfaces/interfaces";
+import Link from "next/link";
 export default function Home() {
   return (
     <div className="container">
@@ -50,9 +51,12 @@ export default function Home() {
                   {navGenerationData.map((navElement: NavElement) => {
                     return (
                       <li key={navElement.name}>
-                        <a className="myNavA navEffect" href={navElement.href}>
+                        <Link
+                          className="myNavA navEffect"
+                          href={navElement.href}
+                        >
                           <span>{navElement.name}</span>
-                        </a>
+                        </Link>
                       </li>
                     );
                   })}
@@ -65,14 +69,14 @@ export default function Home() {
               >
                 <SendEmail {...aboutMeSmallData}></SendEmail>
                 <DownloadFile {...aboutMeSmallData}></DownloadFile>
-                <a href="https://www.linkedin.com/in/aliunwala/">
+                <Link href="https://www.linkedin.com/in/aliunwala/">
                   <img
                     src="/LinkedIn_icon.png"
                     alt="Link to my linkedin page"
                     style={{ height: "24px", width: "24px", marginLeft: "8px" }}
                   ></img>
-                </a>
-                <a href="https://github.com/aliunwala">
+                </Link>
+                <Link href="https://github.com/aliunwala">
                   <img
                     src="/github-mark-white.png"
                     alt="Link to my github page"
@@ -82,7 +86,7 @@ export default function Home() {
                       marginLeft: "16px",
                     }}
                   ></img>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -94,20 +98,26 @@ export default function Home() {
              * ABOUT ME
              *************/}
             <section>
-              <a id="about" className="anchorOffset"></a>
+              <Link id="about" href={"/"} className="anchorOffset"></Link>
               <h2 className="sectionTitle hideMe">About</h2>
               {aboutMeData}
               <br></br>
               <div className="aboutText hideMe">
                 <div style={{ display: "flex", alignItems: "center" }}>
-                  <p>Get my resume:</p>
-                  <DownloadFile {...aboutMeSmallData}></DownloadFile>
+                  <p>
+                    Get my resume:
+                    <DownloadFile {...aboutMeSmallData}></DownloadFile>
+                    or <Link href={"/blog"}> check out my blog posts</Link>
+                  </p>
                 </div>
+                {/* <div style={{ display: "flex", alignItems: "center" }}>
+                </div> */}
+
                 <div style={{ display: "flex", alignItems: "center" }}>
                   <p style={{ marginRight: "12px" }}>Get in touch:</p>
                   <div className="quickLinks">
                     <SendEmail {...aboutMeSmallData}></SendEmail>
-                    <a href="https://www.linkedin.com/in/aliunwala/">
+                    <Link href="https://www.linkedin.com/in/aliunwala/">
                       <img
                         src="/LinkedIn_icon.png"
                         alt="Link to my linkedin page"
@@ -117,8 +127,8 @@ export default function Home() {
                           marginLeft: "8px",
                         }}
                       ></img>
-                    </a>
-                    <a href="https://github.com/aliunwala">
+                    </Link>
+                    <Link href="https://github.com/aliunwala">
                       <img
                         src="/github-mark-white.png"
                         alt="Link to my github page"
@@ -128,7 +138,7 @@ export default function Home() {
                           marginLeft: "16px",
                         }}
                       ></img>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

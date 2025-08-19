@@ -10,6 +10,7 @@ import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import EmailIcon from "@mui/icons-material/Email";
 import DownloadIcon from "@mui/icons-material/Download";
 import { PersonalInfo } from "@/interfaces/interfaces";
+import Link from "next/link";
 
 export default function DownloadFile({ resume }: PersonalInfo) {
   return (
@@ -20,11 +21,11 @@ export default function DownloadFile({ resume }: PersonalInfo) {
         placement="top"
         arrow
       >
-        <a href={resume} target="_blank">
+        <Link href={resume} target="_blank">
           <IconButton className="tooltipButton">
             <DownloadIcon sx={{ color: "#eeeeee" }} />
           </IconButton>
-        </a>
+        </Link>
       </Tooltip>
     </>
   );
