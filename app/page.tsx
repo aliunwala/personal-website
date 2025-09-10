@@ -1,5 +1,3 @@
-import Head from "next/head";
-
 import JobCard from "./_components/JobCard";
 import EducationCard from "./_components/EducationCard";
 import AwardCard from "./_components/AwardCard";
@@ -26,10 +24,6 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="container">
-      <Head>
-        <title>{aboutMeSmallData.name}</title>
-      </Head>
-
       <main>
         {/* tailwindtest */}
         {/* <h1 className="text-3xl font-bold underline">Hello world!</h1> */}

@@ -587,7 +587,7 @@ export const aboutMeSmallData: PersonalInfo = {
   name: "Ali Unwala",
   title: "Senior Software Engineer",
   subtitle:
-    "I enjoy understanding how complex systems work and making unique user interfaces that delight users.",
+    "I enjoy understanding how complex systems work and making unique user interfaces that delight people.",
   email: "aliunwaladev@gmail.com",
   resume: "/Resume_Ali_Unwala.pdf", // this finds the resume in the public directory
 };
