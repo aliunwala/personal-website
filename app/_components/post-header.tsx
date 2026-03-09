@@ -19,7 +19,7 @@ export function PostHeader({ title, coverImage, date, author }: Props) {
         <Avatar name={author.name} picture={author.picture} />
       </div>
       <div className="mb-4 md:mb-8 sm:mx-0">
-        <CoverImage title={title} src={coverImage} />
+        <CoverImage title={title} src={coverImage} size="full" />
       </div>
       <div className=" mx-auto">
         <div className="block md:hidden mb-6">

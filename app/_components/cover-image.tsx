@@ -6,14 +6,17 @@ type Props = {
   title: string;
   src: string;
   slug?: string;
+  size?: 'preview' | 'full';
 };
 
-const CoverImage = ({ title, src, slug }: Props) => {
+const CoverImage = ({ title, src, slug, size = 'preview' }: Props) => {
+  const heightClass = size === 'full' ? 'max-h-96' : 'max-h-80';
+
   const image = (
     <Image
       src={src}
       alt={`Cover Image for ${title}`}
-      className={cn("shadow-sm w-full", {
+      className={cn("shadow-sm w-full object-cover", heightClass, {
         "hover:shadow-lg transition-shadow duration-200": slug,
       })}
       width={1300}

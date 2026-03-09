@@ -1,10 +1,10 @@
 import Container from "@/app/_components/container";
 import { Intro } from "@/app/_components/intro";
-import { getAllPosts } from "@/lib/api";
+import { getAllPostsAsync } from "@/lib/api";
 import { PostPreview } from "../_components/post-preview";
 
-export default function Index() {
-  const allPosts = getAllPosts();
+export default async function Index() {
+  const allPosts = await getAllPostsAsync();
 
   return (
     <main>
